@@ -1,5 +1,7 @@
 # My super awesome Windows 10
 
+![desktop](desktop.jpg)
+
 > _Desktop: Photo by [Irina Iriser](https://www.pexels.com/@iriser?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/)_
 
 # Applications

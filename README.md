@@ -24,7 +24,7 @@
 
 * AHK provides a scripting language that allows you to automate most of the things in Windows. From remapping keys, to moving the mouse, you can automate everything.
 * I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
-* You can define also text expansions, so you don't repeat yourself everywhere.
+* You can define also text expansions, so you don't repeat yourself everywhere. [This article](http://www.thenickmay.com/articles/how-to-expand-text-for-free-with-autohotkey/) is super useful on that.
 
 **[Todoist](https://todoist.com/) - Todo lists**
 
@@ -63,6 +63,8 @@
 **[Microsoft Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) - Terminal emulator**
 
 **[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
+
+**[WSLGit](https://github.com/andy-5/wslgit) - Link WSL's Git and Windows one**
 
 # Preferences
 

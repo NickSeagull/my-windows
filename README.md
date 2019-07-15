@@ -66,6 +66,8 @@
 
 **[WSLGit](https://github.com/andy-5/wslgit) - Link WSL's Git and Windows one**
 
+* I place this in `My Documents/Binaries` (which is added to my `PATH`) to allow VSCode to use `git` from WSL, instead of looking it in Windows itself.
+
 # Preferences
 
 ## Set DNS to Google

@@ -68,6 +68,10 @@
 
 * I place this in `My Documents/Binaries` (which is added to my `PATH`) to allow VSCode to use `git` from WSL, instead of looking it in Windows itself.
 
+## Command Line Apps
+
+**[`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**
+
 # Preferences
 
 ## Set DNS to Google

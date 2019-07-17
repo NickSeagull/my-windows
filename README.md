@@ -72,6 +72,13 @@
 
 **[`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**
 
+## Operating System Extensions
+
+**[Link Shell Extension](http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#contact) - Context menu entry to create symlinks**
+
+* Sometimes it is useful to create a symbolic link from a folder/file to another place. This is specially useful when dealing with configuration files that are checked in a version control system like Git.
+* I use it to manage [my Wox plugins](https://github.com/NickSeagull/wox-plugins).
+
 # Preferences
 
 ## Set DNS to Google

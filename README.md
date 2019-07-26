@@ -26,6 +26,13 @@
 * I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
 * You can define also text expansions, so you don't repeat yourself everywhere. [This article](http://www.thenickmay.com/articles/how-to-expand-text-for-free-with-autohotkey/) is super useful on that.
 
+**[HuntAndPeck](https://github.com/zsims/hunt-and-peck) - Vim-like Windows navigation**
+
+* I'm a huge fan of Vim navigation, I use **Trydactyl** with Firefox to navigate easily the internetz. HuntAndPeck allows you to do the same, but in regular Windows apps (doesn't work in Modern Windows apps sadly).
+* Press `ALT + ;` and a overlay will appear over the elements in your screen, allowing complete, and fast window navigation.
+
+![Hunt and peck screenshot](./screenshots/hunt-and-peck.jpg)
+
 **[Todoist](https://todoist.com/) - Todo lists**
 
 * I use Todoist because it has a nice Android app that comes with a shortcut to add to inbox.

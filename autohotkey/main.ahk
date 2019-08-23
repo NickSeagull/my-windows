@@ -1,4 +1,8 @@
-#include text-expansions.ahk
-#include remappings.ahk
+﻿; #Include layers.ahk
+#Include text-expansions.ahk
+#Include remappings.ahk
 
-^!r::Reload  ; Assign Ctrl-Alt-R as a hotkey to restart the script.
+^!r::
+Reload  ; Assign Ctrl-Alt-R as a hotkey to restart the script.
+TrayTip AutoHotKey Reloaded ✅, ✨✨✨
+return

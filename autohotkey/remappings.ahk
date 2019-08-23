@@ -1,2 +1,4 @@
 ; Remap Caps to Esc
-Capslock::Esc
+Capslock::
+Send {Esc}
+return

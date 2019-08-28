@@ -6,7 +6,7 @@ thm.Add("A", Func("NoOpKey").Bind("a"))
 thm.Add("B", Func("NoOpKey").Bind("b"))
 thm.Add("C", Func("NoOpKey").Bind("c"))
 thm.Add("D", Func("NoOpKey").Bind("d"))
-thm.Add("E", Func("NoOpKey").Bind("e"))
+thm.Add("E", Func("EKey"))
 thm.Add("F", Func("FKey"))
 thm.Add("G", Func("NoOpKey").Bind("g"))
 thm.Add("H", Func("NoOpKey").Bind("h"))
@@ -24,11 +24,13 @@ thm.Add("S", Func("NoOpKey").Bind("s"))
 thm.Add("T", Func("NoOpKey").Bind("t"))
 thm.Add("U", Func("NoOpKey").Bind("u"))
 thm.Add("V", Func("VKey"))
-thm.Add("W", Func("NoOpKey").Bind("w"))
+thm.Add("W", Func("WKey"))
 thm.Add("X", Func("NoOpKey").Bind("x"))
 thm.Add("Y", Func("NoOpKey").Bind("y"))
 thm.Add("Z", Func("NoOpKey").Bind("z"))
 thm.Add("Space", Func("NoOpKey").Bind("{Space}"))
+thm.Add(".", Func("NoOpKey").Bind("."))
+thm.Add(",", Func("NoOpKey").Bind(","))
 
 ;; Remap Sticky-F to Ctrl
 FKey(isHold, taps, state){
@@ -44,6 +46,24 @@ VKey(isHold, taps, state){
   BindKey("media", isHold, state)
   if (!isHold) {
     PassthroughKey("v")
+  }
+}
+
+;; App keys
+WKey(isHold, taps, state){
+  BindKey("app", isHold, state)
+  if (!isHold) {
+    PassthroughKey("w")
+  }
+}
+
+EKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledKey == "app"){
+      Run "explorer.exe"
+    } else {
+      PassthroughKey("e")
+    }
   }
 }
 
@@ -87,11 +107,11 @@ PassthroughKey(key){
   if (GetKeyState("Alt", "P")){
     modifier := modifier . "!"
   }
-  if (GetKeyState("Win", "P")){
-    modifier := modifier . "#"
+  if (GetKeyState("RWin", "P")){
+    modifier := modifier . "`#"
   }
-  sent := modifier . key
   Send % modifier . key
+  modifier := ""
 }
 
 NoOpKey(key, isHold, taps, state){

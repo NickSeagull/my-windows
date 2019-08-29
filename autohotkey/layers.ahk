@@ -1,4 +1,5 @@
 #Include <TapHoldManager>
+#Include <RunOrActivate>
 
 global enabledKey := ""
 thm := new TapHoldManager(0, 250, 1, "$*")
@@ -37,7 +38,11 @@ FKey(isHold, taps, state){
   if (isHold){
     Send % "{Ctrl " (state? "down" : "up") "}"
   } else {
-    PassthroughKey("f")
+    if (enabledKey == "app"){
+      RunOrActivate("C:\Program Files\Mozilla Firefox\firefox.exe", "MozillaWindowClass")
+    } else {
+      PassthroughKey("f")
+    }
   }
 }
 
@@ -45,6 +50,9 @@ FKey(isHold, taps, state){
 VKey(isHold, taps, state){
   BindKey("media", isHold, state)
   if (!isHold) {
+    if (enabledKey == "app"){
+      RunOrActivate("C:\Users\Nick\AppData\Local\Programs\Microsoft VS Code Insiders\Code - Insiders.exe", "Chrome_WidgetWin_1")
+    }
     PassthroughKey("v")
   }
 }

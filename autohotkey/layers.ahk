@@ -3,25 +3,25 @@
 
 global enabledKey := ""
 thm := new TapHoldManager(0, 250, 1, "$*")
-thm.Add("A", Func("NoOpKey").Bind("a"))
+thm.Add("A", Func("AKey"))
 thm.Add("B", Func("NoOpKey").Bind("b"))
 thm.Add("C", Func("NoOpKey").Bind("c"))
-thm.Add("D", Func("NoOpKey").Bind("d"))
+thm.Add("D", Func("DKey"))
 thm.Add("E", Func("EKey"))
 thm.Add("F", Func("FKey"))
 thm.Add("G", Func("NoOpKey").Bind("g"))
 thm.Add("H", Func("NoOpKey").Bind("h"))
 thm.Add("I", Func("NoOpKey").Bind("i"))
-thm.Add("J", Func("NoOpKey").Bind("j"))
-thm.Add("K", Func("NoOpKey").Bind("k"))
-thm.Add("L", Func("NoOpKey").Bind("l"))
+thm.Add("J", Func("JKey"))
+thm.Add("K", Func("KKey"))
+thm.Add("L", Func("LKey"))
 thm.Add("M", Func("MKey"))
 thm.Add("N", Func("NKey"))
 thm.Add("O", Func("NoOpKey").Bind("o"))
 thm.Add("P", Func("NoOpKey").Bind("p"))
 thm.Add("Q", Func("NoOpKey").Bind("q"))
 thm.Add("R", Func("NoOpKey").Bind("r"))
-thm.Add("S", Func("NoOpKey").Bind("s"))
+thm.Add("S", Func("SKey"))
 thm.Add("T", Func("NoOpKey").Bind("t"))
 thm.Add("U", Func("NoOpKey").Bind("u"))
 thm.Add("V", Func("VKey"))
@@ -32,6 +32,7 @@ thm.Add("Z", Func("NoOpKey").Bind("z"))
 thm.Add("Space", Func("NoOpKey").Bind("{Space}"))
 thm.Add(".", Func("NoOpKey").Bind("."))
 thm.Add(",", Func("NoOpKey").Bind(","))
+thm.Add(";", Func("SemicolonKey"))
 
 ;; Remap Sticky-F to Ctrl
 FKey(isHold, taps, state){
@@ -42,6 +43,90 @@ FKey(isHold, taps, state){
       RunOrActivate("C:\Program Files\Mozilla Firefox\firefox.exe", "MozillaWindowClass")
     } else {
       PassthroughKey("f")
+    }
+  }
+}
+
+;; Remap Sticky-J to Ctrl
+JKey(isHold, taps, state){
+  if (isHold){
+    Send % "{Ctrl " (state? "down" : "up") "}"
+  } else {
+    if (enabledKey == "app"){
+    } else {
+      PassthroughKey("j")
+    }
+  }
+}
+
+;; Remap Sticky-D to Alt
+DKey(isHold, taps, state){
+  if (isHold){
+    Send % "{Alt " (state? "down" : "up") "}"
+  } else {
+    if (enabledKey == "app"){
+    } else {
+      PassthroughKey("d")
+    }
+  }
+}
+
+;; Remap Sticky-K to Alt
+KKey(isHold, taps, state){
+  if (isHold){
+    Send % "{Alt " (state? "down" : "up") "}"
+  } else {
+    if (enabledKey == "app"){
+    } else {
+      PassthroughKey("k")
+    }
+  }
+}
+
+;; Remap Sticky-S to Win
+SKey(isHold, taps, state){
+  if (isHold){
+    Send % "{LWin " (state? "down" : "up") "}"
+  } else {
+    if (enabledKey == "app"){
+    } else {
+      PassthroughKey("s")
+    }
+  }
+}
+
+;; Remap Sticky-L to Win
+LKey(isHold, taps, state){
+  if (isHold){
+    Send % "{RWin " (state? "down" : "up") "}"
+  } else {
+    if (enabledKey == "app"){
+    } else {
+      PassthroughKey("l")
+    }
+  }
+}
+
+;; Remap Sticky-A to Shift
+AKey(isHold, taps, state){
+  if (isHold){
+    Send % "{Shift " (state? "down" : "up") "}"
+  } else {
+    if (enabledKey == "app"){
+    } else {
+      PassthroughKey("a")
+    }
+  }
+}
+
+;; Remap Sticky-; to Shift
+SemicolonKey(isHold, taps, state){
+  if (isHold){
+    Send % "{Shift " (state? "down" : "up") "}"
+  } else {
+    if (enabledKey == "app"){
+    } else {
+      PassthroughKey(";")
     }
   }
 }

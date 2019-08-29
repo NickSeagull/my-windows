@@ -1,7 +1,7 @@
 #Include <TapHoldManager>
 #Include <RunOrActivate>
 
-global enabledKey := ""
+global enabledLayer := ""
 thm := new TapHoldManager(0, 250, 1, "$*")
 thm.Add("A", Func("AKey"))
 thm.Add("B", Func("NoOpKey").Bind("b"))
@@ -39,7 +39,7 @@ FKey(isHold, taps, state){
   if (isHold){
     Send % "{Ctrl " (state? "down" : "up") "}"
   } else {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
       RunOrActivate("C:\Program Files\Mozilla Firefox\firefox.exe", "MozillaWindowClass")
     } else {
       PassthroughKey("f")
@@ -52,7 +52,7 @@ JKey(isHold, taps, state){
   if (isHold){
     Send % "{Ctrl " (state? "down" : "up") "}"
   } else {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
     } else {
       PassthroughKey("j")
     }
@@ -64,7 +64,7 @@ DKey(isHold, taps, state){
   if (isHold){
     Send % "{Alt " (state? "down" : "up") "}"
   } else {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
     } else {
       PassthroughKey("d")
     }
@@ -76,7 +76,7 @@ KKey(isHold, taps, state){
   if (isHold){
     Send % "{Alt " (state? "down" : "up") "}"
   } else {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
     } else {
       PassthroughKey("k")
     }
@@ -88,7 +88,7 @@ SKey(isHold, taps, state){
   if (isHold){
     Send % "{LWin " (state? "down" : "up") "}"
   } else {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
     } else {
       PassthroughKey("s")
     }
@@ -100,7 +100,7 @@ LKey(isHold, taps, state){
   if (isHold){
     Send % "{RWin " (state? "down" : "up") "}"
   } else {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
       RunOrActivateTitle("C:\Users\Nick\AppData\Local\slack\slack.exe", "Slack")
     } else {
       PassthroughKey("l")
@@ -113,7 +113,7 @@ AKey(isHold, taps, state){
   if (isHold){
     Send % "{Shift " (state? "down" : "up") "}"
   } else {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
     } else {
       PassthroughKey("a")
     }
@@ -125,7 +125,7 @@ SemicolonKey(isHold, taps, state){
   if (isHold){
     Send % "{Shift " (state? "down" : "up") "}"
   } else {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
     } else {
       PassthroughKey(";")
     }
@@ -136,7 +136,7 @@ SemicolonKey(isHold, taps, state){
 VKey(isHold, taps, state){
   BindKey("media", isHold, state)
   if (!isHold) {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
       RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Microsoft VS Code Insiders\Code - Insiders.exe", "Visual Studio Code")
     }
     PassthroughKey("v")
@@ -153,7 +153,7 @@ WKey(isHold, taps, state){
 
 EKey(isHold, taps, state){
   if (!isHold) {
-    if (enabledKey == "app"){
+    if (enabledLayer == "app"){
       Run "explorer.exe"
     } else {
       PassthroughKey("e")
@@ -163,7 +163,7 @@ EKey(isHold, taps, state){
 
 NKey(isHold, taps, state){
   if (!isHold) {
-    if (enabledKey == "media") {
+    if (enabledLayer == "media") {
       Send {Volume_Down}
     } else {
       PassthroughKey("n")
@@ -173,7 +173,7 @@ NKey(isHold, taps, state){
 
 MKey(isHold, taps, state){
   if (!isHold) {
-    if (enabledKey == "media") {
+    if (enabledLayer == "media") {
       Send {Volume_Up}
     } else {
       PassthroughKey("m")
@@ -183,10 +183,10 @@ MKey(isHold, taps, state){
 
 BindKey(layerName, isHold, state){
   if (isHold and state){
-    enabledKey := layerName
+    enabledLayer := layerName
   }
   if (isHold and !state) {
-    enabledKey := ""
+    enabledLayer := ""
   }
 }
 

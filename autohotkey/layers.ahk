@@ -101,6 +101,7 @@ LKey(isHold, taps, state){
     Send % "{RWin " (state? "down" : "up") "}"
   } else {
     if (enabledKey == "app"){
+      RunOrActivateTitle("C:\Users\Nick\AppData\Local\slack\slack.exe", "Slack")
     } else {
       PassthroughKey("l")
     }
@@ -136,7 +137,7 @@ VKey(isHold, taps, state){
   BindKey("media", isHold, state)
   if (!isHold) {
     if (enabledKey == "app"){
-      RunOrActivate("C:\Users\Nick\AppData\Local\Programs\Microsoft VS Code Insiders\Code - Insiders.exe", "Chrome_WidgetWin_1")
+      RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Microsoft VS Code Insiders\Code - Insiders.exe", "Visual Studio Code")
     }
     PassthroughKey("v")
   }

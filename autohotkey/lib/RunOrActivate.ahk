@@ -10,3 +10,16 @@ RunOrActivate(appName, className){
   }
 	Return
 }
+
+RunOrActivateTitle(appName, titleName){
+ 	IfWinExist %titleName%
+	{
+	    WinActivateBottom, %titleName%
+	}
+	Else
+	{
+	  Run %appName%
+	    WinActivate
+  }
+	Return
+}

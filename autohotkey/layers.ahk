@@ -2,7 +2,7 @@
 #Include <RunOrActivate>
 
 global enabledLayer := ""
-thm := new TapHoldManager(0, 250, 1, "$*")
+thm := new TapHoldManager(0, 175, 1, "$*")
 thm.Add("A", Func("AKey"))
 thm.Add("B", Func("NoOpKey").Bind("b"))
 thm.Add("C", Func("NoOpKey").Bind("c"))
@@ -10,7 +10,7 @@ thm.Add("D", Func("DKey"))
 thm.Add("E", Func("EKey"))
 thm.Add("F", Func("FKey"))
 thm.Add("G", Func("NoOpKey").Bind("g"))
-thm.Add("H", Func("NoOpKey").Bind("h"))
+thm.Add("H", Func("HKey"))
 thm.Add("I", Func("NoOpKey").Bind("i"))
 thm.Add("J", Func("JKey"))
 thm.Add("K", Func("KKey"))
@@ -26,7 +26,7 @@ thm.Add("T", Func("NoOpKey").Bind("t"))
 thm.Add("U", Func("NoOpKey").Bind("u"))
 thm.Add("V", Func("VKey"))
 thm.Add("W", Func("WKey"))
-thm.Add("X", Func("NoOpKey").Bind("x"))
+thm.Add("X", Func("XKey"))
 thm.Add("Y", Func("NoOpKey").Bind("y"))
 thm.Add("Z", Func("NoOpKey").Bind("z"))
 thm.Add("Space", Func("NoOpKey").Bind("{Space}"))
@@ -52,7 +52,9 @@ JKey(isHold, taps, state){
   if (isHold){
     Send % "{Ctrl " (state? "down" : "up") "}"
   } else {
-    if (enabledLayer == "app"){
+    if (enabledLayer == "vim"){
+      PassthroughKey("{Down}")
+    } else if (enabledLayer == "app"){
     } else {
       PassthroughKey("j")
     }
@@ -76,7 +78,9 @@ KKey(isHold, taps, state){
   if (isHold){
     Send % "{Alt " (state? "down" : "up") "}"
   } else {
-    if (enabledLayer == "app"){
+    if (enabledLayer == "vim"){
+      PassthroughKey("{Up}")
+    } else if (enabledLayer == "app"){
     } else {
       PassthroughKey("k")
     }
@@ -100,7 +104,9 @@ LKey(isHold, taps, state){
   if (isHold){
     Send % "{RWin " (state? "down" : "up") "}"
   } else {
-    if (enabledLayer == "app"){
+    if (enabledLayer == "vim"){
+      PassthroughKey("{Right}")
+    } else if (enabledLayer == "app"){
       RunOrActivateTitle("C:\Users\Nick\AppData\Local\slack\slack.exe", "Slack")
     } else {
       PassthroughKey("l")
@@ -148,6 +154,25 @@ WKey(isHold, taps, state){
   BindKey("app", isHold, state)
   if (!isHold) {
     PassthroughKey("w")
+  }
+}
+
+;; Ergo keys
+XKey(isHold, taps, state){
+  BindKey("vim", isHold, state)
+  if (!isHold) {
+    PassthroughKey("x")
+  }
+}
+
+HKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "vim"){
+      PassthroughKey("{Left}")
+    } else if (enabledLayer == "app"){
+    } else {
+      PassthroughKey("h")
+    }
   }
 }
 

@@ -55,6 +55,8 @@ JKey(isHold, taps, state){
     if (enabledLayer == "vim"){
       PassthroughKey("{Down}")
     } else if (enabledLayer == "app"){
+    } else if (enabledLayer == "media"){
+      Send {Media_Play_Pause}
     } else {
       PassthroughKey("j")
     }
@@ -81,6 +83,8 @@ KKey(isHold, taps, state){
     if (enabledLayer == "vim"){
       PassthroughKey("{Up}")
     } else if (enabledLayer == "app"){
+    } else if (enabledLayer == "media"){
+      Send {Volume_Mute}
     } else {
       PassthroughKey("k")
     }
@@ -108,6 +112,8 @@ LKey(isHold, taps, state){
       PassthroughKey("{Right}")
     } else if (enabledLayer == "app"){
       RunOrActivateTitle("C:\Users\Nick\AppData\Local\slack\slack.exe", "Slack")
+    } else if (enabledLayer == "media"){
+      Send {Media_Next}
     } else {
       PassthroughKey("l")
     }
@@ -170,6 +176,8 @@ HKey(isHold, taps, state){
     if (enabledLayer == "vim"){
       PassthroughKey("{Left}")
     } else if (enabledLayer == "app"){
+    } else if (enabledLayer == "media"){
+      Send {Media_Prev}
     } else {
       PassthroughKey("h")
     }

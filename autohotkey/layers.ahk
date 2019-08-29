@@ -56,7 +56,7 @@ JKey(isHold, taps, state){
       PassthroughKey("{Down}")
     } else if (enabledLayer == "app"){
     } else if (enabledLayer == "media"){
-      Send {Media_Play_Pause}
+      Send {Volume_Mute}
     } else {
       PassthroughKey("j")
     }
@@ -84,7 +84,7 @@ KKey(isHold, taps, state){
       PassthroughKey("{Up}")
     } else if (enabledLayer == "app"){
     } else if (enabledLayer == "media"){
-      Send {Volume_Mute}
+      Send {Media_Play_Pause}
     } else {
       PassthroughKey("k")
     }
@@ -97,6 +97,8 @@ SKey(isHold, taps, state){
     Send % "{LWin " (state? "down" : "up") "}"
   } else {
     if (enabledLayer == "app"){
+    } else if (enabledLayer == "media"){
+      RunOrActivateTitle("C:\Users\Nick\AppData\Roaming\Spotify\Spotify.exe", "Spotify")
     } else {
       PassthroughKey("s")
     }

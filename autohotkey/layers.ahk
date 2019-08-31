@@ -22,7 +22,7 @@ thm.Add("P", Func("NoOpKey").Bind("p"))
 thm.Add("Q", Func("NoOpKey").Bind("q"))
 thm.Add("R", Func("NoOpKey").Bind("r"))
 thm.Add("S", Func("SKey"))
-thm.Add("T", Func("NoOpKey").Bind("t"))
+thm.Add("T", Func("TKey"))
 thm.Add("U", Func("NoOpKey").Bind("u"))
 thm.Add("V", Func("VKey"))
 thm.Add("W", Func("WKey"))
@@ -30,8 +30,8 @@ thm.Add("X", Func("XKey"))
 thm.Add("Y", Func("NoOpKey").Bind("y"))
 thm.Add("Z", Func("NoOpKey").Bind("z"))
 thm.Add("Space", Func("NoOpKey").Bind("{Space}"))
-thm.Add(".", Func("NoOpKey").Bind("."))
-thm.Add(",", Func("NoOpKey").Bind(","))
+thm.Add(".", Func("PeriodKey"))
+thm.Add(",", Func("ColonKey"))
 thm.Add(";", Func("SemicolonKey"))
 
 ;; Remap Sticky-F to Ctrl
@@ -136,12 +136,22 @@ AKey(isHold, taps, state){
   }
 }
 
+TKey(isHold, taps, state){
+  if (!isHold){
+    if (enabledLayer == "w"){
+      RunOrActivateTitle("C:\Users\Nick\AppData\Local\wsltty\bin\mintty.exe", "ahk_exe mintty.exe")
+    } else {
+      PassthroughKey("t")
+    }
+  }
+}
 ;; Remap Sticky-; to Shift
 SemicolonKey(isHold, taps, state){
   if (isHold){
     Send % "{Shift " (state? "down" : "up") "}"
   } else {
-    if (enabledLayer == "w"){
+    if (enabledLayer == "x"){
+      Send {Enter}
     } else {
       PassthroughKey(";")
     }
@@ -208,12 +218,34 @@ EKey(isHold, taps, state){
   }
 }
 
+ColonKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+      Send ^{BackSpace}
+    } else {
+      PassthroughKey(",")
+    }
+  }
+}
+
+PeriodKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+      Send ^{Delete}
+    } else {
+      PassthroughKey(".")
+    }
+  }
+}
+
 NKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "v") {
       Send {Volume_Down}
     } else if (enabledLayer == "w") {
       RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
+    } else if (enabledLayer == "x") {
+      Send {BackSpace}
     } else {
       PassthroughKey("n")
     }
@@ -226,6 +258,8 @@ MKey(isHold, taps, state){
       Send {Volume_Up}
     } else if (enabledLayer == "b") {
       Send #{Up}
+    } else if (enabledLayer == "x") {
+      Send {Delete}
     } else {
       PassthroughKey("m")
     }

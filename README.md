@@ -75,6 +75,18 @@
 
 * I place this in `My Documents/Binaries` (which is added to my `PATH`) to allow VSCode to use `git` from WSL, instead of looking it in Windows itself.
 
+## Web browsing
+
+**[Firefox](https://www.mozilla.org/en-US/firefox/new/?redirect_source=getfirefox-com)**
+
+* I use Firefox for my day-to-day web browsing. The fact that it is open is what makes me use it. I don't like the idea of monopolyzing software.
+
+### Firefox extensions
+
+**[Multi-touch Zoom](https://addons.mozilla.org/en-GB/firefox/addon/multi-touch-zoom/) - Smooth zooming**
+
+* I have a Surface Pro 6 as my daily driver, so I like using it's tablet mode from time to time to browse. The fact that Firefox doesn't support pinch zooming out of the box is a bit frustrating. This extensions solves that 😁
+
 ## Command Line Apps
 
 **[`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**

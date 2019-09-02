@@ -5,7 +5,7 @@ global enabledLayer := ""
 thm := new TapHoldManager(0, 175, 1, "$*")
 thm.Add("A", Func("AKey"))
 thm.Add("B", Func("BKey"))
-thm.Add("C", Func("NoOpKey").Bind("c"))
+thm.Add("C", Func("CKey"))
 thm.Add("D", Func("DKey"))
 thm.Add("E", Func("EKey"))
 thm.Add("F", Func("FKey"))
@@ -19,8 +19,8 @@ thm.Add("M", Func("MKey"))
 thm.Add("N", Func("NKey"))
 thm.Add("O", Func("NoOpKey").Bind("o"))
 thm.Add("P", Func("NoOpKey").Bind("p"))
-thm.Add("Q", Func("NoOpKey").Bind("q"))
-thm.Add("R", Func("NoOpKey").Bind("r"))
+thm.Add("Q", Func("QKey"))
+thm.Add("R", Func("RKey"))
 thm.Add("S", Func("SKey"))
 thm.Add("T", Func("TKey"))
 thm.Add("U", Func("NoOpKey").Bind("u"))
@@ -34,6 +34,56 @@ thm.Add(".", Func("PeriodKey"))
 thm.Add(",", Func("ColonKey"))
 thm.Add(";", Func("SemicolonKey"))
 
+;; Remap Sticky-A to Shift
+AKey(isHold, taps, state){
+  if (isHold){
+    Send % "{Shift " (state? "down" : "up") "}"
+  } else {
+    if (enabledLayer == "w"){
+    } else {
+      PassthroughKey("a")
+    }
+  }
+}
+
+;; Window management keys
+BKey(isHold, taps, state){
+  BindKey("b", isHold, state)
+  if (!isHold) {
+    PassthroughKey("b")
+  }
+}
+
+;; Symbol keys
+CKey(isHold, taps, state){
+  BindKey("c", isHold, state)
+  if (!isHold) {
+    PassthroughKey("c")
+  }
+}
+
+;; Remap Sticky-D to Alt
+DKey(isHold, taps, state){
+  if (isHold){
+    Send % "{Alt " (state? "down" : "up") "}"
+  } else {
+    if (enabledLayer == "w"){
+    } else {
+      PassthroughKey("d")
+    }
+  }
+}
+
+EKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "w"){
+      Run "explorer.exe"
+    } else {
+      PassthroughKey("e")
+    }
+  }
+}
+
 ;; Remap Sticky-F to Ctrl
 FKey(isHold, taps, state){
   if (isHold){
@@ -46,6 +96,22 @@ FKey(isHold, taps, state){
     }
   }
 }
+
+HKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+      PassthroughKey("{Left}")
+    } else if (enabledLayer == "w"){
+    } else if (enabledLayer == "b"){
+      Send #{Left}
+    } else if (enabledLayer == "v"){
+      Send {Media_Prev}
+    } else {
+      PassthroughKey("h")
+    }
+  }
+}
+
 
 ;; Remap Sticky-J to Ctrl
 JKey(isHold, taps, state){
@@ -63,18 +129,6 @@ JKey(isHold, taps, state){
   }
 }
 
-;; Remap Sticky-D to Alt
-DKey(isHold, taps, state){
-  if (isHold){
-    Send % "{Alt " (state? "down" : "up") "}"
-  } else {
-    if (enabledLayer == "w"){
-    } else {
-      PassthroughKey("d")
-    }
-  }
-}
-
 ;; Remap Sticky-K to Alt
 KKey(isHold, taps, state){
   if (isHold){
@@ -87,20 +141,6 @@ KKey(isHold, taps, state){
       Send {Media_Play_Pause}
     } else {
       PassthroughKey("k")
-    }
-  }
-}
-
-;; Remap Sticky-S to Win
-SKey(isHold, taps, state){
-  if (isHold){
-    Send % "{LWin " (state? "down" : "up") "}"
-  } else {
-    if (enabledLayer == "w"){
-    } else if (enabledLayer == "v"){
-      RunOrActivateTitle("C:\Users\Nick\AppData\Roaming\Spotify\Spotify.exe", "Spotify")
-    } else {
-      PassthroughKey("s")
     }
   }
 }
@@ -124,14 +164,68 @@ LKey(isHold, taps, state){
   }
 }
 
-;; Remap Sticky-A to Shift
-AKey(isHold, taps, state){
+MKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "v") {
+      Send {Volume_Up}
+    } else if (enabledLayer == "b") {
+      Send #{Up}
+  } else if (enabledLayer == "c"){
+      Send {
+    } else if (enabledLayer == "x") {
+      Send {Delete}
+    } else {
+      PassthroughKey("m")
+    }
+  }
+}
+
+NKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "v") {
+      Send {Volume_Down}
+    } else if (enabledLayer == "c"){
+      Send `}
+    } else if (enabledLayer == "w") {
+      RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
+    } else if (enabledLayer == "x") {
+      Send {BackSpace}
+    } else {
+      PassthroughKey("n")
+    }
+  }
+}
+
+QKey(){
+  if (!isHold){
+    if (enabledLayer == "c"){
+      Send % "'"
+    } else {
+      PassthroughKey("q")
+    }
+  }
+}
+
+RKey(){
+  if (!isHold){
+    if (enabledLayer == "c"){
+      Send "
+    } else {
+      PassthroughKey("r")
+    }
+  }
+}
+
+;; Remap Sticky-S to Win
+SKey(isHold, taps, state){
   if (isHold){
-    Send % "{Shift " (state? "down" : "up") "}"
+    Send % "{LWin " (state? "down" : "up") "}"
   } else {
     if (enabledLayer == "w"){
+    } else if (enabledLayer == "v"){
+      RunOrActivateTitle("C:\Users\Nick\AppData\Roaming\Spotify\Spotify.exe", "Spotify")
     } else {
-      PassthroughKey("a")
+      PassthroughKey("s")
     }
   }
 }
@@ -142,18 +236,6 @@ TKey(isHold, taps, state){
       RunOrActivateTitle("C:\Users\Nick\AppData\Local\wsltty\bin\mintty.exe", "ahk_exe mintty.exe")
     } else {
       PassthroughKey("t")
-    }
-  }
-}
-;; Remap Sticky-; to Shift
-SemicolonKey(isHold, taps, state){
-  if (isHold){
-    Send % "{Shift " (state? "down" : "up") "}"
-  } else {
-    if (enabledLayer == "x"){
-      Send {Enter}
-    } else {
-      PassthroughKey(";")
     }
   }
 }
@@ -173,7 +255,11 @@ VKey(isHold, taps, state){
 WKey(isHold, taps, state){
   BindKey("w", isHold, state)
   if (!isHold) {
-    PassthroughKey("w")
+    if (enabledLayer == "c"){
+      Send "
+    } else {
+      PassthroughKey("w")
+    }
   }
 }
 
@@ -185,35 +271,15 @@ XKey(isHold, taps, state){
   }
 }
 
-;; Window management keys
-BKey(isHold, taps, state){
-  BindKey("b", isHold, state)
-  if (!isHold) {
-    PassthroughKey("b")
-  }
-}
-
-HKey(isHold, taps, state){
-  if (!isHold) {
+;; Remap Sticky-; to Shift
+SemicolonKey(isHold, taps, state){
+  if (isHold){
+    Send % "{Shift " (state? "down" : "up") "}"
+  } else {
     if (enabledLayer == "x"){
-      PassthroughKey("{Left}")
-    } else if (enabledLayer == "w"){
-    } else if (enabledLayer == "b"){
-      Send #{Left}
-    } else if (enabledLayer == "v"){
-      Send {Media_Prev}
+      Send {Enter}
     } else {
-      PassthroughKey("h")
-    }
-  }
-}
-
-EKey(isHold, taps, state){
-  if (!isHold) {
-    if (enabledLayer == "w"){
-      Run "explorer.exe"
-    } else {
-      PassthroughKey("e")
+      PassthroughKey(";")
     }
   }
 }
@@ -234,34 +300,6 @@ PeriodKey(isHold, taps, state){
       Send ^{Delete}
     } else {
       PassthroughKey(".")
-    }
-  }
-}
-
-NKey(isHold, taps, state){
-  if (!isHold) {
-    if (enabledLayer == "v") {
-      Send {Volume_Down}
-    } else if (enabledLayer == "w") {
-      RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
-    } else if (enabledLayer == "x") {
-      Send {BackSpace}
-    } else {
-      PassthroughKey("n")
-    }
-  }
-}
-
-MKey(isHold, taps, state){
-  if (!isHold) {
-    if (enabledLayer == "v") {
-      Send {Volume_Up}
-    } else if (enabledLayer == "b") {
-      Send #{Up}
-    } else if (enabledLayer == "x") {
-      Send {Delete}
-    } else {
-      PassthroughKey("m")
     }
   }
 }

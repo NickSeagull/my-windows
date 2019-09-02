@@ -1,4 +1,4 @@
-#Include <TapHoldManager>
+﻿#Include <TapHoldManager>
 #Include <RunOrActivate>
 
 global enabledLayer := ""
@@ -17,8 +17,8 @@ thm.Add("K", Func("KKey"))
 thm.Add("L", Func("LKey"))
 thm.Add("M", Func("MKey"))
 thm.Add("N", Func("NKey"))
-thm.Add("O", Func("NoOpKey").Bind("o"))
-thm.Add("P", Func("NoOpKey").Bind("p"))
+thm.Add("O", Func("OKey"))
+thm.Add("P", Func("PKey"))
 thm.Add("Q", Func("QKey"))
 thm.Add("R", Func("RKey"))
 thm.Add("S", Func("SKey"))
@@ -186,6 +186,10 @@ NKey(isHold, taps, state){
       Send {Volume_Down}
     } else if (enabledLayer == "c"){
       Send `}
+    } else if (enabledLayer == "p"){
+      Send ñ
+    } else if (enabledLayer == "o"){
+      Send Ñ
     } else if (enabledLayer == "w") {
       RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
     } else if (enabledLayer == "x") {
@@ -196,7 +200,26 @@ NKey(isHold, taps, state){
   }
 }
 
-QKey(){
+;; caps accent layer
+OKey(isHold, taps, state){
+  BindKey("o", isHold, state)
+  if (!isHold){
+    PassthroughKey("o")
+  }
+}
+
+;; accent layer
+PKey(isHold, taps, state){
+  BindKey("p", isHold, state)
+  if (!isHold){
+    if (enabledLayer == "c"){
+    } else {
+      PassthroughKey("p")
+    }
+  }
+}
+
+QKey(isHold, taps, state){
   if (!isHold){
     if (enabledLayer == "c"){
       Send % "'"
@@ -206,7 +229,7 @@ QKey(){
   }
 }
 
-RKey(){
+RKey(isHold, taps, state){
   if (!isHold){
     if (enabledLayer == "c"){
       Send "

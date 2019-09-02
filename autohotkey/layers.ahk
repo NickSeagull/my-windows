@@ -11,7 +11,7 @@ thm.Add("E", Func("EKey"))
 thm.Add("F", Func("FKey"))
 thm.Add("G", Func("NoOpKey").Bind("g"))
 thm.Add("H", Func("HKey"))
-thm.Add("I", Func("NoOpKey").Bind("i"))
+thm.Add("I", Func("IKey"))
 thm.Add("J", Func("JKey"))
 thm.Add("K", Func("KKey"))
 thm.Add("L", Func("LKey"))
@@ -23,7 +23,7 @@ thm.Add("Q", Func("QKey"))
 thm.Add("R", Func("RKey"))
 thm.Add("S", Func("SKey"))
 thm.Add("T", Func("TKey"))
-thm.Add("U", Func("NoOpKey").Bind("u"))
+thm.Add("U", Func("UKey"))
 thm.Add("V", Func("VKey"))
 thm.Add("W", Func("WKey"))
 thm.Add("X", Func("XKey"))
@@ -39,7 +39,10 @@ AKey(isHold, taps, state){
   if (isHold){
     Send % "{Shift " (state? "down" : "up") "}"
   } else {
-    if (enabledLayer == "w"){
+    if (enabledLayer == "p"){
+      Send á
+    } else if (enabledLayer == "q"){
+      Send Á
     } else {
       PassthroughKey("a")
     }
@@ -78,6 +81,10 @@ EKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "w"){
       Run "explorer.exe"
+    } else iF (enabledLayer == "p"){
+      Send é
+    } else if (enabledLayer == "q"){
+      Send É
     } else {
       PassthroughKey("e")
     }
@@ -112,6 +119,18 @@ HKey(isHold, taps, state){
   }
 }
 
+IKey(isHold, taps, state){
+  BindKey("i", isHold, state)
+  if (!isHold){
+    if (enabledLayer == "p") {
+      Send í
+    } else if (enabledLayer == "q") {
+      Send Í
+    } else {
+      PassthroughKey("i")
+    }
+  }
+}
 
 ;; Remap Sticky-J to Ctrl
 JKey(isHold, taps, state){
@@ -188,7 +207,7 @@ NKey(isHold, taps, state){
       Send `}
     } else if (enabledLayer == "p"){
       Send ñ
-    } else if (enabledLayer == "o"){
+    } else if (enabledLayer == "q"){
       Send Ñ
     } else if (enabledLayer == "w") {
       RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
@@ -200,11 +219,16 @@ NKey(isHold, taps, state){
   }
 }
 
-;; caps accent layer
 OKey(isHold, taps, state){
   BindKey("o", isHold, state)
   if (!isHold){
-    PassthroughKey("o")
+    if (enabledLayer == "p") {
+      Send ó
+    } else if (enabledLayer == "q") {
+      Send Ó
+    } else {
+      PassthroughKey("o")
+    }
   }
 }
 
@@ -219,7 +243,9 @@ PKey(isHold, taps, state){
   }
 }
 
+;; caps accent layer
 QKey(isHold, taps, state){
+  BindKey("q", isHold, state)
   if (!isHold){
     if (enabledLayer == "c"){
       Send % "'"
@@ -263,6 +289,18 @@ TKey(isHold, taps, state){
   }
 }
 
+UKey(isHold, taps, state){
+  BindKey("u", isHold, state)
+  if (!isHold){
+    if (enabledLayer == "p") {
+      Send ú
+    } else if (enabledLayer == "q") {
+      Send Ú
+    } else {
+      PassthroughKey("u")
+    }
+  }
+}
 ;; Media keys
 VKey(isHold, taps, state){
   BindKey("v", isHold, state)

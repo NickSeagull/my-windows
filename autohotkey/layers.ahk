@@ -61,7 +61,11 @@ BKey(isHold, taps, state){
 CKey(isHold, taps, state){
   BindKey("c", isHold, state)
   if (!isHold) {
-    PassthroughKey("c")
+    if (enabledLayer == "w"){
+      RunOrActivateTitle("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe", "ahk_exe chrome.exe")
+    } else {
+      PassthroughKey("c")
+    }
   }
 }
 
@@ -85,6 +89,8 @@ EKey(isHold, taps, state){
       Send é
     } else if (enabledLayer == "q"){
       Send É
+    } else if (enabledLayer == "x"){
+      Send {Home}
     } else {
       PassthroughKey("e")
     }
@@ -97,7 +103,6 @@ FKey(isHold, taps, state){
     Send % "{Ctrl " (state? "down" : "up") "}"
   } else {
     if (enabledLayer == "w"){
-      RunOrActivate("C:\Program Files\Mozilla Firefox\firefox.exe", "MozillaWindowClass")
     } else {
       PassthroughKey("f")
     }
@@ -259,6 +264,8 @@ RKey(isHold, taps, state){
   if (!isHold){
     if (enabledLayer == "c"){
       Send "
+    } else if (enabledLayer == "x"){
+      Send {End}
     } else {
       PassthroughKey("r")
     }
@@ -306,7 +313,7 @@ VKey(isHold, taps, state){
   BindKey("v", isHold, state)
   if (!isHold) {
     if (enabledLayer == "w"){
-      RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Microsoft VS Code Insiders\Code - Insiders.exe", "Visual Studio Code")
+      RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Microsoft VS Code\Code.exe", "Visual Studio Code")
     }
     PassthroughKey("v")
   }

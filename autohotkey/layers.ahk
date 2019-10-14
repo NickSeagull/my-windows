@@ -102,7 +102,8 @@ FKey(isHold, taps, state){
   if (isHold){
     Send % "{Ctrl " (state? "down" : "up") "}"
   } else {
-    if (enabledLayer == "w"){
+    if (enabledLayer == "k"){
+      Keypirinha("Everything: Search")
     } else {
       PassthroughKey("f")
     }
@@ -113,7 +114,8 @@ HKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "x"){
       PassthroughKey("{Left}")
-    } else if (enabledLayer == "w"){
+    } else if (enabledLayer == "c"){
+      Send -
     } else if (enabledLayer == "b"){
       Send #{Left}
     } else if (enabledLayer == "v"){
@@ -131,6 +133,8 @@ IKey(isHold, taps, state){
       Send í
     } else if (enabledLayer == "q") {
       Send Í
+    } else if (enabledLayer == "w"){
+      RunOrActivateEdge("notepad.exe")
     } else {
       PassthroughKey("i")
     }
@@ -144,7 +148,8 @@ JKey(isHold, taps, state){
   } else {
     if (enabledLayer == "x"){
       PassthroughKey("{Down}")
-    } else if (enabledLayer == "w"){
+    } else if (enabledLayer == "c"){
+      Send _
     } else if (enabledLayer == "v"){
       Send {Volume_Mute}
     } else {
@@ -155,6 +160,7 @@ JKey(isHold, taps, state){
 
 ;; Remap Sticky-K to Alt
 KKey(isHold, taps, state){
+  BindKey("k", isHold, state)
   if (isHold){
     Send % "{Alt " (state? "down" : "up") "}"
   } else {
@@ -195,7 +201,7 @@ MKey(isHold, taps, state){
     } else if (enabledLayer == "b") {
       Send #{Up}
   } else if (enabledLayer == "c"){
-      Send {
+      Send {}}
     } else if (enabledLayer == "x") {
       Send {Delete}
     } else {
@@ -209,7 +215,7 @@ NKey(isHold, taps, state){
     if (enabledLayer == "v") {
       Send {Volume_Down}
     } else if (enabledLayer == "c"){
-      Send `}
+      Send {{}
     } else if (enabledLayer == "p"){
       Send ñ
     } else if (enabledLayer == "q"){
@@ -373,6 +379,15 @@ PeriodKey(isHold, taps, state){
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;  H E L P E R S  ;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Keypirinha(command){
+  SavedClip := ClipboardAll
+  Clipboard := command
+  Send #!^k
+  Sleep 150
+  Send {Tab}
+  Clipboard := SavedClip
+}
 
 BindKey(layerName, isHold, state){
   if (isHold and state){

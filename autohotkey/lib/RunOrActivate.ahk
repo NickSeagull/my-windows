@@ -23,3 +23,7 @@ RunOrActivateTitle(appName, titleName){
   }
 	Return
 }
+
+RunOrActivateEdge(appName){
+	WinActivate, ahk_exe MicrosoftEdgeCP.exe
+}

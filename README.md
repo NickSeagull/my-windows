@@ -56,6 +56,12 @@
 
 **[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
 
+## Social
+
+**[Unigram](https://github.com/UnigramDev/Unigram) - A Telegram client optimized for Windows 10**
+
+* The regular Telegram client has some issues with DPI scaling, meaning that if I move the window from my 1080p monitor to the Surface one, it'll stay with the same resolution. This doesn't happen with Unigram, and I get integrated notifications.
+
 ## Web browsing
 
 **[Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)**

@@ -1,0 +1,60 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # Phrases
+  - trigger: ":imo"
+    replace: "in my opinion"
+
+  - trigger: ":asap"
+    replace: "as soon as possible"
+
+  - trigger: ":btw"
+    replace: "by the way"
+
+  - trigger: ":fwis"
+    replace: "from what I see"
+
+  - trigger: ":ofc"
+    replace: "of course"
+
+  # Words
+  - trigger: ":def"
+    replace: "definitely"
+
+  - trigger: ":w"
+    replace: "with"
+
+  - trigger: ":W"
+    replace: "With"
+
+  # Code
+  - trigger: ":mdc"
+    replace: "```\n\n```"
+
+  # Dates
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y"
+
+  # Shell commands
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo Hello from your shell"

@@ -1,5 +1,4 @@
 ﻿#Include layers.ahk
-#Include text-expansions.ahk
 #Include remappings.ahk
 
 setTitleMatchMode, 2

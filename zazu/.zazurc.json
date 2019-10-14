@@ -1,6 +1,6 @@
 {
   "hotkey": "ctrl+space",
-  "theme": "tinytacoteam/zazu-dark-theme",
+  "theme": "iansinnott/zazu-dark-theme",
   "displayOn": "detect",
   "plugins": [
     "tinytacoteam/zazu-calculator",
@@ -12,7 +12,7 @@
       "name": "tinytacoteam/zazu-fallback",
       "variables": {
         "rootSearches": [
-          "google"
+          "duck"
         ]
       }
     },

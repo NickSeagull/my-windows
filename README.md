@@ -26,13 +26,6 @@
 * I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
 * You can define also text expansions, so you don't repeat yourself everywhere. [This article](http://www.thenickmay.com/articles/how-to-expand-text-for-free-with-autohotkey/) is super useful on that.
 
-**[HuntAndPeck](https://github.com/zsims/hunt-and-peck) - Vim-like Windows navigation**
-
-* I'm a huge fan of Vim navigation, I use **Trydactyl** with Firefox to navigate easily the internetz. HuntAndPeck allows you to do the same, but in regular Windows apps (doesn't work in Modern Windows apps sadly).
-* Press `ALT + ;` and a overlay will appear over the elements in your screen, allowing complete, and fast window navigation.
-
-![Hunt and peck screenshot](./screenshots/hunt-and-peck.jpg)
-
 **[Todoist](https://todoist.com/) - Todo lists**
 
 * I use Todoist because it has a nice Android app that comes with a shortcut to add to inbox.
@@ -51,14 +44,6 @@
 
 ![manictime screenshot](screenshots/manictime.png)
 
-**[Nebo](https://www.nebo.app/) - Note taking**
-
-* I **LOVE** handwriting, [it helps me learn faster](https://redbooth.com/blog/handwriting-and-memory), and doodle my ideas around.
-* The issue with this, is that handwriting is not very shareable, and when taking notes on meetings, it is complicated to share handwritten notes, as one has to transcribe them and turn them into a document.
-* Nebo does this for you _automagically_ by double tapping on your handwritten notes, as it will automatically convert this into text, and/or diagrams.
-
-![nebo screenshot](screenshots/nebo.png)
-
 **[Screen Sketch](https://www.microsoft.com/en-us/p/screen-sketch/9mz95kl8mr0l?activetab=pivot:overviewtab) - Screenshot tool**
 
 
@@ -71,21 +56,19 @@
 
 **[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
 
-**[WSLGit](https://github.com/andy-5/wslgit) - Link WSL's Git and Windows one**
-
-* I place this in `My Documents/Binaries` (which is added to my `PATH`) to allow VSCode to use `git` from WSL, instead of looking it in Windows itself.
-
 ## Web browsing
 
-**[Firefox](https://www.mozilla.org/en-US/firefox/new/?redirect_source=getfirefox-com)**
+**[Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)**
 
-* I use Firefox for my day-to-day web browsing. The fact that it is open is what makes me use it. I don't like the idea of monopolyzing software.
+* Edge is just the best browser for my Surface Pro, it saves a ton of battery. Plus, it is surprisingly fast. I have all the required extensions that I need, except perhaps, Vim keybindings. (I'm aware of [edge-vimium](https://github.com/iscriptology/edge-vimium) but it is unmaintained, buggy, and it isn't published on the Microsoft Store 😢)
 
-### Firefox extensions
+### Edge extensions
 
-**[Multi-touch Zoom](https://addons.mozilla.org/en-GB/firefox/addon/multi-touch-zoom/) - Smooth zooming**
+**[Grammarly](https://app.grammarly.com/)**
 
-* I have a Surface Pro 6 as my daily driver, so I like using it's tablet mode from time to time to browse. The fact that Firefox doesn't support pinch zooming out of the box is a bit frustrating. This extensions solves that 😁
+**[uBlock Origin](https://www.microsoft.com/en-us/p/ublock-origin/9nblggh444l4)**
+
+**[1password](https://www.microsoft.com/en-us/p/1password/9wzdncrdr64j)**
 
 ## Command Line Apps
 
@@ -96,7 +79,6 @@
 **[Link Shell Extension](http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#contact) - Context menu entry to create symlinks**
 
 * Sometimes it is useful to create a symbolic link from a folder/file to another place. This is specially useful when dealing with configuration files that are checked in a version control system like Git.
-* I use it to manage [my Wox plugins](https://github.com/NickSeagull/wox-plugins).
 
 # Preferences
 

@@ -9,7 +9,7 @@ thm.Add("C", Func("CKey"))
 thm.Add("D", Func("DKey"))
 thm.Add("E", Func("EKey"))
 thm.Add("F", Func("FKey"))
-thm.Add("G", Func("NoOpKey").Bind("g"))
+thm.Add("G", Func("GKey"))
 thm.Add("H", Func("HKey"))
 thm.Add("I", Func("IKey"))
 thm.Add("J", Func("JKey"))
@@ -33,6 +33,16 @@ thm.Add("Space", Func("NoOpKey").Bind("{Space}"))
 thm.Add(".", Func("PeriodKey"))
 thm.Add(",", Func("ColonKey"))
 thm.Add(";", Func("SemicolonKey"))
+thm.Add("1", Func("OneKey"))
+thm.Add("2", Func("TwoKey"))
+thm.Add("3", Func("ThreeKey"))
+thm.Add("4", Func("FourKey"))
+thm.Add("5", Func("FiveKey"))
+thm.Add("6", Func("SixKey"))
+thm.Add("7", Func("SevenKey"))
+thm.Add("8", Func("EightKey"))
+thm.Add("9", Func("NineKey"))
+thm.Add("0", Func("ZeroKey"))
 
 ;; Remap Sticky-A to Shift
 AKey(isHold, taps, state){
@@ -103,9 +113,18 @@ FKey(isHold, taps, state){
     Send % "{Ctrl " (state? "down" : "up") "}"
   } else {
     if (enabledLayer == "k"){
-      Keypirinha("Everything: Search")
     } else {
       PassthroughKey("f")
+    }
+  }
+}
+
+GKey(isHold, taps, state){
+  BindKey("g", isHold, state)
+  if (!isHold) {
+    if (enabledLayer == "w"){
+    } else {
+      PassthroughKey("g")
     }
   }
 }
@@ -220,6 +239,8 @@ NKey(isHold, taps, state){
       Send ñ
     } else if (enabledLayer == "q"){
       Send Ñ
+    } else if (enabledLayer == "g"){
+      WinSearch("documents")
     } else if (enabledLayer == "w") {
       RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
     } else if (enabledLayer == "x") {
@@ -247,7 +268,8 @@ OKey(isHold, taps, state){
 PKey(isHold, taps, state){
   BindKey("p", isHold, state)
   if (!isHold){
-    if (enabledLayer == "c"){
+    if (enabledLayer == "g"){
+      WinSearch("apps")
     } else {
       PassthroughKey("p")
     }
@@ -378,15 +400,104 @@ PeriodKey(isHold, taps, state){
   }
 }
 
+OneKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+    } else {
+      PassthroughKey("1")
+    }
+  }
+}
+
+TwoKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+    } else {
+      PassthroughKey("2")
+    }
+  }
+}
+
+ThreeKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+    } else {
+      PassthroughKey("3")
+    }
+  }
+}
+
+FourKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+      Send {End}
+    } else {
+      PassthroughKey("4")
+    }
+  }
+}
+
+FiveKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+    } else {
+      PassthroughKey("5")
+    }
+  }
+}
+
+SixKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+    } else {
+      PassthroughKey("6")
+    }
+  }
+}
+
+SevenKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+    } else {
+      PassthroughKey("7")
+    }
+  }
+}
+
+EightKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+    } else {
+      PassthroughKey("8")
+    }
+  }
+}
+
+NineKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+    } else {
+      PassthroughKey("9")
+    }
+  }
+}
+
+ZeroKey(isHold, taps, state){
+  if (!isHold) {
+    if (enabledLayer == "x"){
+      Send {Home}
+    } else {
+      PassthroughKey("0")
+    }
+  }
+}
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;  H E L P E R S  ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-Keypirinha(command){
-  SavedClip := ClipboardAll
-  Clipboard := command
-  Send #!^k
-  Sleep 150
-  Send {Tab}
-  Clipboard := SavedClip
+WinSearch(category){
+  Send {LWin}
+  Sleep 100
+  Send % category . ": "
 }
 
 BindKey(layerName, isHold, state){

@@ -1,8 +1,6 @@
 # My super awesome Windows 10
 
-![desktop](desktop.jpg)
-
-> _Desktop: Photo by [Irina Iriser](https://www.pexels.com/@iriser?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/)_
+![desktop](https://i.imgur.com/3Qf25H8.png)
 
 # Applications
 
@@ -43,9 +41,6 @@
 * I try to be as mindful as possible in my life, so having an app that helps me stay mindful with the computer is a plus.
 
 ![manictime screenshot](screenshots/manictime.png)
-
-**[Screen Sketch](https://www.microsoft.com/en-us/p/screen-sketch/9mz95kl8mr0l?activetab=pivot:overviewtab) - Screenshot tool**
-
 
 
 ## Coding

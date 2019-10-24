@@ -1,6 +1,8 @@
 ﻿#Include <TapHoldManager>
 #Include <RunOrActivate>
 
+global USERNAME := "nikit"
+
 global enabledLayer := ""
 thm := new TapHoldManager(0, 175, 1, "$*")
 thm.Add("A", Func("AKey"))
@@ -202,7 +204,7 @@ LKey(isHold, taps, state){
     if (enabledLayer == "x"){
       PassthroughKey("{Right}")
     } else if (enabledLayer == "w"){
-      RunOrActivateTitle("C:\Users\Nick\AppData\Local\slack\slack.exe", "Slack")
+      RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\slack\slack.exe", "Slack")
     } else if (enabledLayer == "v"){
       Send {Media_Next}
     } else if (enabledLayer == "b"){
@@ -242,7 +244,7 @@ NKey(isHold, taps, state){
     } else if (enabledLayer == "g"){
       WinSearch("documents")
     } else if (enabledLayer == "w") {
-      RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
+      RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
     } else if (enabledLayer == "x") {
       Send {BackSpace}
     } else {
@@ -307,7 +309,7 @@ SKey(isHold, taps, state){
   } else {
     if (enabledLayer == "w"){
     } else if (enabledLayer == "v"){
-      RunOrActivateTitle("C:\Users\Nick\AppData\Roaming\Spotify\Spotify.exe", "Spotify")
+      RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Roaming\Spotify\Spotify.exe", "Spotify")
     } else {
       PassthroughKey("s")
     }
@@ -317,7 +319,7 @@ SKey(isHold, taps, state){
 TKey(isHold, taps, state){
   if (!isHold){
     if (enabledLayer == "w"){
-      RunOrActivateTitle("C:\Users\Nick\AppData\Local\wsltty\bin\mintty.exe", "ahk_exe mintty.exe")
+      RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\wsltty\bin\mintty.exe", "ahk_exe mintty.exe")
     } else {
       PassthroughKey("t")
     }
@@ -341,7 +343,7 @@ VKey(isHold, taps, state){
   BindKey("v", isHold, state)
   if (!isHold) {
     if (enabledLayer == "w"){
-      RunOrActivateTitle("C:\Users\Nick\AppData\Local\Programs\Microsoft VS Code\Code.exe", "Visual Studio Code")
+      RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\Programs\Microsoft VS Code\Code.exe", "Visual Studio Code")
     }
     PassthroughKey("v")
   }

@@ -27,12 +27,6 @@ matches:
   - trigger: ":def"
     replace: "definitely"
 
-  - trigger: ":w"
-    replace: "with"
-
-  - trigger: ":W"
-    replace: "With"
-
   # Code
   - trigger: ":mdc"
     replace: "```\n\n```"

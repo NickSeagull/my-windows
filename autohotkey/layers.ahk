@@ -30,7 +30,7 @@ thm.Add("V", Func("VKey"))
 thm.Add("W", Func("WKey"))
 thm.Add("X", Func("XKey"))
 thm.Add("Y", Func("NoOpKey").Bind("y"))
-thm.Add("Z", Func("NoOpKey").Bind("z"))
+thm.Add("Z", Func("ZKey"))
 thm.Add("Space", Func("NoOpKey").Bind("{Space}"))
 thm.Add(".", Func("PeriodKey"))
 thm.Add(",", Func("ColonKey"))
@@ -102,7 +102,7 @@ EKey(isHold, taps, state){
     } else if (enabledLayer == "q"){
       Send É
     } else if (enabledLayer == "x"){
-      Send {Home}
+      Send ^{Right}
     } else {
       PassthroughKey("e")
     }
@@ -322,6 +322,8 @@ TKey(isHold, taps, state){
   if (!isHold){
     if (enabledLayer == "w"){
       RunOrActivateTitle("C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_0.5.2762.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe", "ahk_exe WindowsTerminal.exe")
+    } else if (enabledLayer == "z"){
+      RunOrActivateTitle("C:\Program Files\WindowsApps\38833FF26BA1D.UnigramPreview_3.11.2588.0_x86__g9c9v27vpyspw\Unigram.exe", "Unigram")
     } else {
       PassthroughKey("t")
     }
@@ -357,6 +359,8 @@ WKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "c"){
       Send "
+    } else if (enabledLayer == "x"){
+      Send ^{Left}
     } else {
       PassthroughKey("w")
     }
@@ -368,6 +372,16 @@ XKey(isHold, taps, state){
   BindKey("x", isHold, state)
   if (!isHold) {
     PassthroughKey("x")
+  }
+}
+
+ZKey(isHold, taps, state){
+  BindKey("z", isHold, state)
+  if (!isHold) {
+    if (enabledLayer == "x"){
+    } else {
+      PassthroughKey("z")
+    }
   }
 }
 

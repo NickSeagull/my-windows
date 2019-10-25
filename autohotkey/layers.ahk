@@ -260,6 +260,8 @@ OKey(isHold, taps, state){
       Send ó
     } else if (enabledLayer == "q") {
       Send Ó
+    } else if (enabledLayer == "w"){
+      RunOrActivateTitle("C:\Program Files\Sublime Text 3\sublime_text.exe", "ahk_exe sublime_text.exe")
     } else {
       PassthroughKey("o")
     }
@@ -319,7 +321,7 @@ SKey(isHold, taps, state){
 TKey(isHold, taps, state){
   if (!isHold){
     if (enabledLayer == "w"){
-      RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\wsltty\bin\mintty.exe", "ahk_exe mintty.exe")
+      RunOrActivateTitle("C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_0.5.2762.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe", "ahk_exe WindowsTerminal.exe")
     } else {
       PassthroughKey("t")
     }

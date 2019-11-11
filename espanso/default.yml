@@ -40,6 +40,28 @@ matches:
         params:
           format: "%d/%m/%Y"
 
+  # Personal info 
+  - trigger: ":name"
+    replace: "Nikita"
+
+  - trigger: ":sname"
+    replace: "Tchayka"
+
+  - trigger: ":fsname"
+    replace: "Tchayka Razumov"
+
+  - trigger: ":fname"
+    replace: "Nikita Tchayka Razumov"
+
+  - trigger: ":email"
+    replace: "nikitatchayka@gmail.com"
+
+  - trigger: ":wemail"
+    replace: "nick@theagilemonkeys.com"
+
+  - trigger: ":address"
+    replace: "Calle Tamara 13"
+
   # Shell commands
   - trigger: ":shell"
     replace: "{{output}}"

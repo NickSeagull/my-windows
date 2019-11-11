@@ -73,6 +73,8 @@
 
 ## Command Line Apps
 
+I manage my command line tools using [Home Manager](https://github.com/rycee/home-manager)
+
 **[`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**
 
 ## Operating System Extensions
@@ -86,3 +88,4 @@
 ## Set DNS to Google
 
 * Docker has issues with the default DNS provided with Windows 10, to set it to Google's DNS, [follow step 2 of this guide](https://www.cactusvpn.com/tutorials/how-to-set-up-smart-dns-on-windows-10/).
+

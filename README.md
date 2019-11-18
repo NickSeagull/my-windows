@@ -4,19 +4,17 @@
 
 # Applications
 
+## Privacy
+
+Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 exists:
+
+**[ShutUp10](https://www.oo-software.com/en/shutup10) - Privacy Issues fixer**
+
+* ShutUp10 helps disabling all the harmful Windows privacy settings with just one click
+
+![shutup10 screenshot](screenshots/shutup10.jpg)
+
 ## Productivity
-
-**[Wox](http://www.wox.one/) - Launcher**
-
-> _Note: I use [a fork](https://github.com/liberize/Wox/releases) by the user **liberize**. This fork allows launching Wox with a query already set. This, in combination with [AutoHotKey](#autohotkey), makes the automation of searches very easy._
-
-> _Note: For Wox to work, we have to also download the [**Everything** search engine](https://www.voidtools.com/).
-
-![wox screenshot](screenshots/wox.png)
-
-* I've been using Alfred for MacOS in the past, and while Wox is not that strong in terms of community and existing plugins, it is equally capable of doing the same stuff as Alfred does.
-
-* Although C#, and Python are the languages that provide libraries for developing the Wox plugins, one can do so in any language you want, as long as it can be compiled to an executable, [according to the docs](http://doc.wox.one/en/plugin/create_plugin.html).
 
 **[AutoHotKey](https://www.autohotkey.com/) - General automation**
 
@@ -77,6 +75,8 @@ I manage my command line tools using [Home Manager](https://github.com/rycee/hom
 
 **[`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**
 
+**[`watchexec`](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications**
+
 ## Operating System Extensions
 
 **[Link Shell Extension](http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#contact) - Context menu entry to create symlinks**
@@ -88,4 +88,3 @@ I manage my command line tools using [Home Manager](https://github.com/rycee/hom
 ## Set DNS to Google
 
 * Docker has issues with the default DNS provided with Windows 10, to set it to Google's DNS, [follow step 2 of this guide](https://www.cactusvpn.com/tutorials/how-to-set-up-smart-dns-on-windows-10/).
-

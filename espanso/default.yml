@@ -70,3 +70,6 @@ matches:
         type: shell
         params:
           cmd: "echo Hello from your shell"
+
+  - trigger: ":shrug"
+    replace: "¯\\_(ツ)_/¯"

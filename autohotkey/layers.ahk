@@ -74,7 +74,7 @@ CKey(isHold, taps, state){
   BindKey("c", isHold, state)
   if (!isHold) {
     if (enabledLayer == "w"){
-      RunOrActivateTitle("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe", "ahk_exe chrome.exe")
+      RunOrActivateTitle("C:\Program Files (x86)\BraveSoftware\Brave-Browser\Application\brave.exe", "ahk_exe brave.exe")
     } else {
       PassthroughKey("c")
     }

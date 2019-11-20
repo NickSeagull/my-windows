@@ -57,17 +57,15 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 ## Web browsing
 
-**[Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge)**
+**[Brave](https://brave.com/)**
 
-* Edge is just the best browser for my Surface Pro, it saves a ton of battery. Plus, it is surprisingly fast. I have all the required extensions that I need, except perhaps, Vim keybindings. (I'm aware of [edge-vimium](https://github.com/iscriptology/edge-vimium) but it is unmaintained, buggy, and it isn't published on the Microsoft Store 😢)
+* Brave is a Chrome-compatible alternative, that is very fast and is focused on protecting your privacy.
 
-### Edge extensions
+### Brave extensions
 
-**[Grammarly](https://app.grammarly.com/)**
+**[Vimium](https://vimium.github.io/)**
 
-**[uBlock Origin](https://www.microsoft.com/en-us/p/ublock-origin/9nblggh444l4)**
-
-**[1password](https://www.microsoft.com/en-us/p/1password/9wzdncrdr64j)**
+**[1password](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk)**
 
 ## Command Line Apps
 
@@ -85,6 +83,6 @@ I manage my command line tools using [Home Manager](https://github.com/rycee/hom
 
 # Preferences
 
-## Set DNS to Google
+## Set DNS to DNS.Watch
 
-* Docker has issues with the default DNS provided with Windows 10, to set it to Google's DNS, [follow step 2 of this guide](https://www.cactusvpn.com/tutorials/how-to-set-up-smart-dns-on-windows-10/).
+* Docker has issues with the default DNS provided with Windows 10, to set it to DNS.Watch's servers, [follow this guide](https://dns.watch/how-to-windows-7).

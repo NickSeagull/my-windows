@@ -14,6 +14,19 @@ Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtec
 
 ############################################
 #                                          #
+# U T I L I T Y   F U N C T I O N S        #
+#                                          #
+############################################
+function Set-Shortcut {
+param ( [string]$SourceLnk, [string]$DestinationPath )
+  $WshShell = New-Object -comObject WScript.Shell
+  $Shortcut = $WshShell.CreateShortcut($SourceLnk)
+  $Shortcut.TargetPath = $DestinationPath
+  $Shortcut.Save()
+}
+
+############################################
+#                                          #
 # S E T U P   D I R E C T O R I E S        #
 #                                          #
 ############################################
@@ -111,4 +124,5 @@ if ($exclusionsToAdd.Length -gt 0) {
 # S E T U P   MYWINDOWS   S E T T I N G S  #
 #                                          #
 ############################################
-git clone https://github.com/nickseagull/my-windows $env:USERPROFILE\Projects
+git clone https://github.com/nickseagull/my-windows $env:USERPROFILE\Projects\my-windows
+## Set-Shortcut "$([environment]::GetFolderPath("Startup"))\main.lnk" "$env:USERPROFILE\Projects\my-windows\autohotkey\main.ahk"

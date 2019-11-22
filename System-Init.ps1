@@ -125,4 +125,4 @@ if ($exclusionsToAdd.Length -gt 0) {
 #                                          #
 ############################################
 git clone https://github.com/nickseagull/my-windows $env:USERPROFILE\Projects\my-windows
-## Set-Shortcut "$([environment]::GetFolderPath("Startup"))\main.lnk" "$env:USERPROFILE\Projects\my-windows\autohotkey\main.ahk"
+# Set-Shortcut "$([environment]::GetFolderPath("Startup"))\main.lnk" "$env:USERPROFILE\Projects\my-windows\autohotkey\main.ahk"

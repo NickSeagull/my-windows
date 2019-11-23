@@ -42,7 +42,7 @@ cinst autohotkey
 cinst todoist
 cinst 1password
 cinst manictime
-cinst Emacs
+cinst vscode
 cinst microsoft-windows-terminal
 cinst brave
 cinst LinkShellExtension
@@ -62,7 +62,6 @@ cinst windscribe
 cinst wox
 cinst visualstudio2019community
 cinst hasklig
-cinst diffutils
 
 # Install WSL, reboot, and then Ubuntu 18.04
 cinst wsl

@@ -46,6 +46,7 @@ cinst vscode
 cinst microsoft-windows-terminal
 cinst brave
 cinst LinkShellExtension
+cinst notion
 cinst slack
 cinst spotify
 cinst discord

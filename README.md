@@ -36,7 +36,6 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 **[ManicTime](https://www.manictime.com/) - Time management**
 
 - Time management is **extremely** important for me. Without it, I can get lost in some computer task for hours, without noticing. It helps me maintain my sanity by making sure that I don't overwork also, as I work remotely.
-
 - I try to be as mindful as possible in my life, so having an app that helps me stay mindful with the computer is a plus.
 
 ![manictime screenshot](screenshots/manictime.png)

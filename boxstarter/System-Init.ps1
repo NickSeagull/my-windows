@@ -18,7 +18,7 @@ Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtec
 #                                          #
 ############################################
 function Set-Shortcut {
-param ( [string]$SourceLnk, [string]$DestinationPath )
+  param ( [string]$SourceLnk, [string]$DestinationPath )
   $WshShell = New-Object -comObject WScript.Shell
   $Shortcut = $WshShell.CreateShortcut($SourceLnk)
   $Shortcut.TargetPath = $DestinationPath
@@ -62,6 +62,7 @@ cinst windscribe
 cinst wox
 cinst visualstudio2019community
 cinst hasklig
+cinst typora
 
 # Install WSL, reboot, and then Ubuntu 18.04
 cinst wsl
@@ -100,7 +101,7 @@ cinst wsl-ubuntu-1804
 }
 
 # Add WSL paths to exclusions
-$wslPaths = (Get-ChildItem HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss | ForEach-Object { Get-ItemProperty $_.PSPath}).BasePath
+$wslPaths = (Get-ChildItem HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss | ForEach-Object { Get-ItemProperty $_.PSPath }).BasePath
 $currentExclusions = $(Get-MpPreference).ExclusionPath
 if (!$currentExclusions) {
   $currentExclusions = ''
@@ -108,14 +109,14 @@ if (!$currentExclusions) {
 $exclusionsToAdd = ((Compare-Object $wslPaths $currentExclusions) | Where-Object SideIndicator -eq "<=").InputObject
 $dirs = @("\bin", "\sbin", "\usr\bin", "\usr\sbin", "\usr\local\bin", "\usr\local\go\bin")
 if ($exclusionsToAdd.Length -gt 0) {
-  $exclusionsToAdd | ForEach-Object { 
+  $exclusionsToAdd | ForEach-Object {
     Add-MpPreference -ExclusionPath $_
     Write-Output "Added exclusion for $_"
     $rootfs = $_ + "\rootfs"
     $dirs | ForEach-Object {
-        $exclusion = $rootfs + $_ + "\*"
-        Add-MpPreference -ExclusionProcess $exclusion
-        Write-Output "Added exclusion for $exclusion"
+      $exclusion = $rootfs + $_ + "\*"
+      Add-MpPreference -ExclusionProcess $exclusion
+      Write-Output "Added exclusion for $exclusion"
     }
   }
 }

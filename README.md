@@ -43,6 +43,8 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 - Replaces a lot of tools like Evernote, Google Sheets, etc..
 - I use it mainly to organize my personal stuff
 
+![notion screenshot](screenshots/notion.png)
+
 **⚠ [1password](https://1password.com/) - Password management**
 
 - Having the same password for all the sites is a very bad practice. I learnt this once a friend's Steam account got hacked, and with it, his email, Facebook, and everything.

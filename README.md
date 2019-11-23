@@ -15,15 +15,26 @@ The apps listed in this repo follow the following convention:
 - 👜 The app needs to be installed manually from the Windows store
 - ⚠ The app needs to be installed manually from the Windows store
 
-## Privacy
-
-Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 exists:
+## Security
 
 **✅ [ShutUp10](https://www.oo-software.com/en/shutup10) - Privacy Issues fixer**
 
+- Yes, Windows 10 still is far behind other OSes regarding privacy. Luckily ShutUp10 exists.
 - ShutUp10 helps disabling all the harmful Windows privacy settings with just one click
 
 ![shutup10 screenshot](screenshots/shutup10.jpg)
+
+**✅ [SimpleWall]( https://www.henrypp.org/product/simplewall) - Better Firewall**
+
+* The Windows Firewall is nice, but it is not that accessible.
+* SimpleWall begins by blocking all apps, and starts prompting you for out/incoming connections, so you can allow them, or leave them blocked.
+
+![simplewall screenshot](screenshots/simplewall.png)
+
+**✅ [WindScribe]( https://windscribe.com/ ) - VPN**
+
+* When connecting through public networks, I **always** use a VPN in order to protect myself.
+* It also comes with some perks, like bypassing ports that are being blocked by the network.
 
 ## Productivity
 
@@ -49,6 +60,7 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 - Having the same password for all the sites is a very bad practice. I learnt this once a friend's Steam account got hacked, and with it, his email, Facebook, and everything.
 - Thanks to passwords managers like this one, I don't even need to remember my passwords.
+- For some reason, `chocolatey` doesn't install this properly, and it always fails.
 
 **✅ [ManicTime](https://www.manictime.com/) - Time management**
 
@@ -57,6 +69,18 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 ![manictime screenshot](screenshots/manictime.png)
 
+**⚠ [FileJuggler]( https://www.filejuggler.com/ ) - Automatic File Organization**
+
+* I use this app to autocommit some of my repos (like this one)
+* Also, I remove downloads that start with `t.` after one day, so my Downloads folder doesn't get cluttered.
+* Fails to be installed with `chocolatey`
+
+![filejuggler screenshot](screenshots/filejuggler.png)
+
+**✅ [Transmission]( https://transmissionbt.com/ ) - Torrent client**
+
+* I use this client to share files from time to time, very minimal one, which I like.
+
 ## Coding
 
 **✅ [Visual Studio Code](https://code.visualstudio.com/) - My main code editor**
@@ -64,6 +88,8 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 **✅ [Microsoft Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) - Terminal emulator**
 
 **✅ [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
+
+**✅ [Docker Desktop]( https://www.docker.com/products/docker-desktop ) - Containerization of apps**
 
 ## Social
 

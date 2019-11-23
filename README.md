@@ -30,7 +30,7 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 **[1password](https://1password.com/) - Password management**
 
-- Having the same password for all the sites is a very bad practice. I learn't this once a friend's Steam account got hacked, and with it, his email, Facebook, and everything.
+- Having the same password for all the sites is a very bad practice. I learnt this once a friend's Steam account got hacked, and with it, his email, Facebook, and everything.
 - Thanks to passwords managers like this one, I don't even need to remember my passwords.
 
 **[ManicTime](https://www.manictime.com/) - Time management**

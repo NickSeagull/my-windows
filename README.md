@@ -67,7 +67,9 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 ## Social
 
-**✅ Slac
+**✅ [Slack](https://slack.com) - Work chat**
+
+- I use Slack mainly for work, although I also chat from time to time in the Functional
 
 **👜 [Unigram](https://github.com/UnigramDev/Unigram) - A Telegram client optimized for Windows 10**
 

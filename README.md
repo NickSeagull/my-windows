@@ -12,7 +12,8 @@ I use [BoxStarter](https://boxstarter.org/) in order to automate the installatio
 The apps listed in this repo follow the following convention:
 
 - ✅ The app is successfully automated with BoxStarter
-- bag The app needs to be installed manually from the Windows store
+- 👜 The app needs to be installed manually from the Windows store
+- ⚠ The app needs to be installed manually from the Windows store
 
 ## Privacy
 

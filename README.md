@@ -4,7 +4,7 @@
 
 # Applications
 
-I use [BoxStarter](https://boxstarter.org/) in order to automate the installation of all of my applications
+I use [BoxStarter](https://boxstarter.org/) in order to automate the installation of all of my applications.
 
 ## Privacy
 

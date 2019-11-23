@@ -6,7 +6,8 @@
 
 I use [BoxStarter](https://boxstarter.org/) in order to automate the installation of most of my applications. The process usually goes like this:
 
-* Install BoxStarter with ``
+* Install BoxStarter with `. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force`
+* 
 
 ## Privacy
 

@@ -9,6 +9,11 @@ I use [BoxStarter](https://boxstarter.org/) in order to automate the installatio
 - Install BoxStarter with `. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force`
 - Run the BoxStarter script of this repo with `Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/NickSeagull/my-windows/master/boxstarter/System-Init.ps1 -DisableReboots`
 
+The apps listed in this repo follow the following convention:
+
+* ✅ The app is successfully automated with BoxStarter
+* ⚠ The app needs to be installed manually
+
 ## Privacy
 
 Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 exists:

@@ -77,8 +77,6 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 ## Music
 
-**
-
 ## Web browsing
 
 **✅ [Brave](https://brave.com/)**

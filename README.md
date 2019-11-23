@@ -6,8 +6,8 @@
 
 I use [BoxStarter](https://boxstarter.org/) in order to automate the installation of most of my applications. The process usually goes like this:
 
-* Install BoxStarter with `. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force`
-* Run the BoxStarter script of this repo with `Install-BoxstarterPackage -PackageName https://gist.github.com/mwrock/7382880/raw/f6525387b4b524b8eccef6ed4d5ec219c82c0ac7/gistfile1.txt -DisableReboots`
+- Install BoxStarter with `. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force`
+- Run the BoxStarter script of this repo with `Install-BoxstarterPackage -PackageName https://github.com/NickSeagull/my-windows/raw/master/boxstarter/System-Init.ps1 -DisableReboots`
 
 ## Privacy
 

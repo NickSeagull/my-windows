@@ -37,7 +37,9 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 - I use Todoist because it has a nice Android app that comes with a shortcut to add to inbox.
 - I'm slowly getting used to GTD, so Todoist is a nice addition for my workflow.
 
-**✅ [Notion](https://www.notion.so/) - All-in-one workspace**
+**✅ [Notion](https://www.notion.so/) - All organizer**
+
+- Notion is a software masterpiece, it makes organization seem very simple
 
 **⚠ [1password](https://1password.com/) - Password management**
 

@@ -35,6 +35,7 @@ The apps listed in this repo follow the following convention:
 
 * When connecting through public networks, I **always** use a VPN in order to protect myself.
 * It also comes with some perks, like bypassing ports that are being blocked by the network.
+* WindScribe has a nice app that I like to select different servers.
 
 ## Productivity
 

@@ -18,7 +18,7 @@ The apps listed in this repo follow the following convention:
 
 Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 exists:
 
-**[ShutUp10](https://www.oo-software.com/en/shutup10) - Privacy Issues fixer**
+**✅ [ShutUp10](https://www.oo-software.com/en/shutup10) - Privacy Issues fixer**
 
 - ShutUp10 helps disabling all the harmful Windows privacy settings with just one click
 

@@ -71,11 +71,22 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 - I use Slack mainly for work, although I also chat from time to time in the Functional Programming one
 
+**✅ Discord - Leisure chat**
+
+* I like playing online games, and from time to time, I socialize in them, meaning that I have to talk to people, so I use Discord
+* On the other hand, it also allows me to talk with people from some developer communities, like AutoHotKey.
+
+![discord screenshot](screenshots/discord.png)
+
 **👜 [Unigram](https://github.com/UnigramDev/Unigram) - A Telegram client optimized for Windows 10**
 
 - The regular Telegram client has some issues with DPI scaling, meaning that if I move the window from my 1080p monitor to the Surface one, it'll stay with the same resolution. This doesn't happen with Unigram, and I get integrated notifications.
 
 ## Music
+
+**✅ [Spotify](https://spotify.com) - Music player**
+
+* I use Spotify on a daily basis. I love listening to many kinds of music, and specially, discovering new songs.
 
 ## Web browsing
 
@@ -91,11 +102,11 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 ## Command Line Apps
 
-I manage my command line tools using [Home Manager](https://github.com/rycee/home-manager)
+**✅ [`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**
 
-**[`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**
+**✅ [`watchexec`](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications**
 
-**[`watchexec`](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications**
+**✅ [RunInBash]( https://github.com/neosmart/RunInBash ) - Aliases `$` to run any command in WSL**
 
 ## Operating System Extensions
 

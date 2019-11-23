@@ -41,7 +41,7 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 - Notion is a software masterpiece, it makes organization seem very simple
 - Replaces a lot of tools like Evernote, Google Sheets, etc..
-- Go-to place for my 
+- I use it mainly to organize my personal stuff
 
 **⚠ [1password](https://1password.com/) - Password management**
 

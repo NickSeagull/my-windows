@@ -12,7 +12,7 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 **[ShutUp10](https://www.oo-software.com/en/shutup10) - Privacy Issues fixer**
 
-* ShutUp10 helps disabling all the harmful Windows privacy settings with just one click
+- ShutUp10 helps disabling all the harmful Windows privacy settings with just one click
 
 ![shutup10 screenshot](screenshots/shutup10.jpg)
 
@@ -20,28 +20,27 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 **[AutoHotKey](https://www.autohotkey.com/) - General automation**
 
-* AHK provides a scripting language that allows you to automate most of the things in Windows. From remapping keys, to moving the mouse, you can automate everything.
-* I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
-* You can define also text expansions, so you don't repeat yourself everywhere. [This article](http://www.thenickmay.com/articles/how-to-expand-text-for-free-with-autohotkey/) is super useful on that.
+- AHK provides a scripting language that allows you to automate most of the things in Windows. From remapping keys, to moving the mouse, you can automate everything.
+- I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
+- You can define also text expansions, so you don't repeat yourself everywhere. [This article](http://www.thenickmay.com/articles/how-to-expand-text-for-free-with-autohotkey/) is super useful on that.
 
 **[Todoist](https://todoist.com/) - Todo lists**
 
-* I use Todoist because it has a nice Android app that comes with a shortcut to add to inbox.
-* I'm slowly getting used to GTD, and from my point of view, Todoist has everything I need in the free tier (at least for now). Also it has a nice [Python library](https://github.com/Doist/todoist-python), so someday I can write a Wox plugin with it 😄
+- I use Todoist because it has a nice Android app that comes with a shortcut to add to inbox.
+- I'm slowly getting used to GTD, so Todoist is a nice addition for my workflow.
 
 **[1password](https://1password.com/) - Password management**
 
-* Having the same password for all the sites is a very bad practice. I learn't this once a friend's Steam account got hacked, and with it, his email, Facebook, and everything.
-* Thanks to passwords managers like this one, I don't even need to remember my passwords.
+- Having the same password for all the sites is a very bad practice. I learn't this once a friend's Steam account got hacked, and with it, his email, Facebook, and everything.
+- Thanks to passwords managers like this one, I don't even need to remember my passwords.
 
 **[ManicTime](https://www.manictime.com/) - Time management**
 
-* Time management is **extremely** important for me. Without it, I can get lost in some computer task for hours, without noticing. It helps me maintain my sanity by making sure that I don't overwork also, as I work remotely.
+- Time management is **extremely** important for me. Without it, I can get lost in some computer task for hours, without noticing. It helps me maintain my sanity by making sure that I don't overwork also, as I work remotely.
 
-* I try to be as mindful as possible in my life, so having an app that helps me stay mindful with the computer is a plus.
+- I try to be as mindful as possible in my life, so having an app that helps me stay mindful with the computer is a plus.
 
 ![manictime screenshot](screenshots/manictime.png)
-
 
 ## Coding
 
@@ -55,13 +54,13 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 **[Unigram](https://github.com/UnigramDev/Unigram) - A Telegram client optimized for Windows 10**
 
-* The regular Telegram client has some issues with DPI scaling, meaning that if I move the window from my 1080p monitor to the Surface one, it'll stay with the same resolution. This doesn't happen with Unigram, and I get integrated notifications.
+- The regular Telegram client has some issues with DPI scaling, meaning that if I move the window from my 1080p monitor to the Surface one, it'll stay with the same resolution. This doesn't happen with Unigram, and I get integrated notifications.
 
 ## Web browsing
 
 **[Brave](https://brave.com/)**
 
-* Brave is a Chrome-compatible alternative, that is very fast and is focused on protecting your privacy.
+- Brave is a Chrome-compatible alternative, that is very fast and is focused on protecting your privacy.
 
 ### Brave extensions
 
@@ -81,10 +80,10 @@ I manage my command line tools using [Home Manager](https://github.com/rycee/hom
 
 **[Link Shell Extension](http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#contact) - Context menu entry to create symlinks**
 
-* Sometimes it is useful to create a symbolic link from a folder/file to another place. This is specially useful when dealing with configuration files that are checked in a version control system like Git.
+- Sometimes it is useful to create a symbolic link from a folder/file to another place. This is specially useful when dealing with configuration files that are checked in a version control system like Git.
 
 # Preferences
 
 ## Set DNS to DNS.Watch
 
-* Docker has issues with the default DNS provided with Windows 10, to set it to DNS.Watch's servers, [follow this guide](https://dns.watch/how-to-windows-7).
+- Docker has issues with the default DNS provided with Windows 10, to set it to DNS.Watch's servers, [follow this guide](https://dns.watch/how-to-windows-7).

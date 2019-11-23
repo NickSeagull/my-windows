@@ -4,6 +4,8 @@
 
 # Applications
 
+I use 
+
 ## Privacy
 
 Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 exists:

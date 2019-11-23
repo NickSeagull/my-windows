@@ -51,6 +51,7 @@ cinst slack
 cinst spotify
 cinst discord
 cinst RunInBash
+cinst bat
 cinst simplewall
 cinst basecamp3
 cinst filejuggler

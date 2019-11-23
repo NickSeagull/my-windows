@@ -26,12 +26,12 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 ## Productivity
 
-**[AutoHotKey](https://www.autohotkey.com/) - General automation**
+**✅ [AutoHotKey](https://www.autohotkey.com/) - General automation**
 
 - AHK provides a scripting language that allows you to automate most of the things in Windows. From remapping keys, to moving the mouse, you can automate everything.
 - I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
 
-**[Todoist](https://todoist.com/) - Todo lists**
+**✅ [Todoist](https://todoist.com/) - Todo lists**
 
 - I use Todoist because it has a nice Android app that comes with a shortcut to add to inbox.
 - I'm slowly getting used to GTD, so Todoist is a nice addition for my workflow.
@@ -41,7 +41,7 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 - Having the same password for all the sites is a very bad practice. I learnt this once a friend's Steam account got hacked, and with it, his email, Facebook, and everything.
 - Thanks to passwords managers like this one, I don't even need to remember my passwords.
 
-**[ManicTime](https://www.manictime.com/) - Time management**
+**✅ [ManicTime](https://www.manictime.com/) - Time management**
 
 - Time management is **extremely** important for me. Without it, I can get lost in some computer task for hours, without noticing. It helps me maintain my sanity by making sure that I don't overwork also, as I work remotely.
 - I try to be as mindful as possible in my life, so having an app that helps me stay mindful with the computer is a plus.
@@ -50,11 +50,11 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 ## Coding
 
-**[Visual Studio Code](https://code.visualstudio.com/) - My main code editor**
+**✅ [Visual Studio Code](https://code.visualstudio.com/) - My main code editor**
 
-**[Microsoft Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) - Terminal emulator**
+**✅ [Microsoft Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) - Terminal emulator**
 
-**[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
+**✅ [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
 
 ## Social
 

@@ -64,7 +64,7 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 ## Web browsing
 
-**[Brave](https://brave.com/)**
+**✅ [Brave](https://brave.com/)**
 
 - Brave is a Chrome-compatible alternative, that is very fast and is focused on protecting your privacy.
 

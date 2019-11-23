@@ -22,7 +22,6 @@ Yes, Windows 10 still is far behind MacOS regarding privacy. Luckily ShutUp10 ex
 
 - AHK provides a scripting language that allows you to automate most of the things in Windows. From remapping keys, to moving the mouse, you can automate everything.
 - I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
-- You can define also text expansions, so you don't repeat yourself everywhere. [This article](http://www.thenickmay.com/articles/how-to-expand-text-for-free-with-autohotkey/) is super useful on that.
 
 **[Todoist](https://todoist.com/) - Todo lists**
 

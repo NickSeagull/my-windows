@@ -62,6 +62,7 @@ cinst windscribe
 cinst wox
 cinst visualstudio2019community
 cinst hasklig
+cinst diffutils
 
 # Install WSL, reboot, and then Ubuntu 18.04
 cinst wsl

@@ -66,7 +66,6 @@ cinst visualstudio2019community
 cinst hasklig
 cinst typora
 cinst watchexec
-cinst rustup.install
 
 # Install WSL, reboot, and then Ubuntu 18.04
 cinst wsl

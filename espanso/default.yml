@@ -4,7 +4,7 @@
 # You can refer to the official documentation:
 # https://espanso.org/docs/
 
-toggle: BACKSPACE
+toggle_key: OFF
 
 # Matches are the substitution rules, when you type the "trigger" string
 # it gets replaced by the "replace" string.
@@ -42,7 +42,7 @@ matches:
         params:
           format: "%d/%m/%Y"
 
-  # Personal info 
+  # Personal info
   - trigger: ":name"
     replace: "Nikita"
 

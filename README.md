@@ -75,6 +75,12 @@ The apps listed in this repo follow the following convention:
 * Also, I don't like using acronyms, so I can automatically expand them.
 * You can find the expansions [here](espanso/default.yml)
 
+**⚠ [Simple Mind]( https://simplemind.eu/ ) - Mind mapping**
+
+* I use Simple Mind to brainstorm around how can I break down a problem into smaller ones
+
+![simple mind screenshot](screenshots/simplemind.png)
+
 **✅ [ManicTime](https://www.manictime.com/) - Time management**
 
 - Time management is **extremely** important for me. Without it, I can get lost in some computer task for hours, without noticing. It helps me maintain my sanity by making sure that I don't overwork also, as I work remotely.

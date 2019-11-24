@@ -1,6 +1,8 @@
 # My super awesome Windows 10 🐱‍🐉
 
-> The system setup that makes my computing experience awesome [![say thanks badge]( https://img.shields.io/badge/say-thanks-ff69b4)](https://ko-fi.com/nickseagull)
+> The system setup that makes my computing experience awesome
+
+[![say thanks badge]( https://img.shields.io/badge/say-thanks-ff69b4)](https://ko-fi.com/nickseagull)
 
 ![desktop](https://i.imgur.com/3Qf25H8.png)
 

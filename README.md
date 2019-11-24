@@ -1,4 +1,6 @@
-# My super awesome Windows 10
+# My super awesome Windows 10 🐱‍🐉
+
+> The system setup that makes my computing experience awesome
 
 ![desktop](https://i.imgur.com/3Qf25H8.png)
 

@@ -107,8 +107,6 @@ The apps listed in this repo follow the following convention:
 
 ![typora screenshot](screenshots/typora.png)
 
-
-
 ## Social
 
 **✅ [Slack](https://slack.com) - Work chat**

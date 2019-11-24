@@ -13,7 +13,7 @@ The apps listed in this repo follow the following convention:
 
 - ✅ The app is successfully automated with BoxStarter
 - 👜 The app needs to be installed manually from the Windows store
-- ⚠ The app needs to be installed manually from the Windows store
+- ⚠ The app needs to be installed manually from its website
 
 ## Security
 

@@ -73,6 +73,7 @@ The apps listed in this repo follow the following convention:
 
 * I try to avoid typing the typical stuff, like my name, address, etc... Espanso helps me with this task
 * Also, I don't like using acronyms, so I can automatically expand them.
+* You can find the expansions [here](espanso/default.yml)
 
 **✅ [ManicTime](https://www.manictime.com/) - Time management**
 

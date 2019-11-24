@@ -174,6 +174,10 @@ The apps listed in this repo follow the following convention:
 
 - Sometimes it is useful to create a symbolic link from a folder/file to another place. This is specially useful when dealing with configuration files that are checked in a version control system like Git.
 
+# Acknowledgements
+
+Thanks to [Nikita Voloboev]( https://nikitavoloboev.xyz/ ) for his awesome [`my-mac-os` list]( https://github.com/nikitavoloboev/my-mac-os ), without it, this one wouldn't exist 🙏
+
 # Preferences
 
 ## Set DNS to DNS.Watch

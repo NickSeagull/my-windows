@@ -144,6 +144,8 @@ The apps listed in this repo follow the following convention:
 
 ## Command Line Apps
 
+**✅ [`chocolatey`]( https://chocolatey.org/ ) - An `apt`/`brew` for Windows**
+
 **✅ [`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**
 
 **✅ [`watchexec`](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications**

@@ -69,6 +69,11 @@ The apps listed in this repo follow the following convention:
 - Thanks to passwords managers like this one, I don't even need to remember my passwords.
 - For some reason, `chocolatey` doesn't install this properly, and it always fails.
 
+**⚠ [Espanso](https://espanso.org/) - Text expansions**
+
+* I try to avoid typing the typical stuff, like my name, address, etc... Espanso helps me with this task
+* Also, I don't like using acronyms, so I can automatically expand them.
+
 **✅ [ManicTime](https://www.manictime.com/) - Time management**
 
 - Time management is **extremely** important for me. Without it, I can get lost in some computer task for hours, without noticing. It helps me maintain my sanity by making sure that I don't overwork also, as I work remotely.

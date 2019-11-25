@@ -44,7 +44,7 @@ cinst 1password
 cinst manictime
 cinst vscode
 cinst microsoft-windows-terminal
-cinst brave
+cinst microsoft-edge-insider
 cinst LinkShellExtension
 cinst notion
 cinst slack

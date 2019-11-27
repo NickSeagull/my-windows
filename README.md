@@ -148,15 +148,17 @@ The apps listed in this repo follow the following convention:
 
 ## Web browsing
 
-**✅ [Brave](https://brave.com/)**
+**✅ [Microsoft Edge Insider]( https://www.microsoftedgeinsider.com/en-us/ )**
 
-- Brave is a Chrome-compatible alternative, that is very fast and is focused on protecting your privacy.
+- Edge Insider is a Chrome-compatible alternative. It is owned by Microsoft, meaning that it is (will be?, it is currently beta) optimized for Surface devices, and compatible with all the Chrome addons.
 
-### Brave extensions
+### Edge Insider extensions
 
 **[Vimium](https://vimium.github.io/)**
 
 **[1password](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk)**
+
+**[uBlock Origin]( https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm )**
 
 ## Command Line Apps
 

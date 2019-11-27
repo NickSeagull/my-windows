@@ -68,6 +68,8 @@ cinst typora
 cinst watchexec
 cinst powershell-core
 cinst cmake
+cinst vagrant
+cinst haskell-stack
 
 # Install WSL, reboot, and then Ubuntu 18.04
 cinst wsl

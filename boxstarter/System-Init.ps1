@@ -70,6 +70,7 @@ cinst powershell-core
 cinst cmake
 cinst vagrant
 cinst haskell-stack
+cinst diffutils
 
 # Install WSL, reboot, and then Ubuntu 18.04
 cinst wsl

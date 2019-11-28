@@ -72,7 +72,7 @@ cinst vagrant
 cinst haskell-stack
 cinst diffutils  # required by emacs
 cinst peazip
-cinst FiraCode-ttf
+cinst FiraCode
 
 # Install WSL, reboot, and then Ubuntu 18.04
 cinst wsl

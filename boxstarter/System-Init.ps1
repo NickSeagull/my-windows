@@ -62,15 +62,16 @@ cinst git
 cinst nodejs
 cinst windscribe
 cinst wox
-cinst visualstudio2019community
+cinst visualstudio2019community  # required to work with native packages with Rust/TS
 cinst hasklig
 cinst typora
 cinst watchexec
 cinst powershell-core
-cinst cmake
+cinst cmake      # required by visual studio for some packages
 cinst vagrant
 cinst haskell-stack
-cinst diffutils
+cinst diffutils  # required by emacs
+cinst peazip
 
 # Install WSL, reboot, and then Ubuntu 18.04
 cinst wsl

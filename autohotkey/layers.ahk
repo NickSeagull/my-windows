@@ -295,7 +295,7 @@ QKey(isHold, taps, state){
 RKey(isHold, taps, state){
   if (!isHold){
     if (enabledLayer == "c"){
-      Send "
+      Send % "`""
     } else if (enabledLayer == "x"){
       Send {End}
     } else {

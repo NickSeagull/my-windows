@@ -347,7 +347,7 @@ VKey(isHold, taps, state){
   BindKey("v", isHold, state)
   if (!isHold) {
     if (enabledLayer == "w"){
-      RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\Programs\Microsoft VS Code\Code.exe", "Visual Studio Code")
+      RunOrActivateTitle("runemacs.exe", "Spacemacs")
     }
     PassthroughKey("v")
   }

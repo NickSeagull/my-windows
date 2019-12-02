@@ -74,18 +74,6 @@ cinst diffutils  # required by emacs
 cinst peazip
 cinst FiraCode
 
-# Install WSL, reboot, and then Ubuntu 18.04
-cinst wsl
-$response = Read-Host -Prompt "###################################################\nWSL INSTALLED, RESTART? (y/n) NOTE: DO IT IF ITS THE FIRST TIME \n###################################################\n"
-while (($response -eq 'y') -or ($response -eq 'n')) {
-  $response = Read-Host -Prompt "I didn't understand, try again (y/n)"
-}
-if ($response -eq 'y') {
-  Write-Host "Restarting..."
-  Invoke-Reboot
-}
-cinst wsl-ubuntu-1804
-
 ############################################
 #                                          #
 # D E F E N D E R   E X C L U S I O N S    #

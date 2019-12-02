@@ -73,6 +73,7 @@ cinst haskell-stack
 cinst diffutils  # required by emacs
 cinst peazip
 cinst FiraCode
+cinst vcxsrv
 
 ############################################
 #                                          #

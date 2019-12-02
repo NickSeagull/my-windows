@@ -165,6 +165,10 @@ The apps listed in this repo follow the following convention:
 
 ## Command Line Apps
 
+I use most of my command line apps from WSL, apart from a few ones described here:
+
+### Windows CLI apps
+
 **✅ [`chocolatey`]( https://chocolatey.org/ ) - An `apt`/`brew` for Windows**
 
 **✅ [`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**
@@ -173,7 +177,24 @@ The apps listed in this repo follow the following convention:
 
 **✅ [RunInBash]( https://github.com/neosmart/RunInBash ) - Aliases `$` to run any command in WSL**
 
-## Operating System Extensions
+### WSL CLI apps
+
+**⚠ `nix` - A purely functional package manager**
+
+* I install Nix by adding the following to `/etc/nix/nix.conf`
+
+  ```text
+  sandbox = false
+  use-sqlite-wal = false
+  ```
+
+  And by then running `curl https://nixos.org/nix/install sh`
+
+**⚠ [`home-manager`](https://github.com/rycee/home-manager) - User environment management**
+
+* Note: Install using 19.09 as the channel, instead of master.
+* I install most of my WSL CLI apps using Nix, and I manage them declaratively using `home-manager`
+* I can easily add packages to my `home.nix` file, and then run `home-manager switch` in order to get the newest environment.
 
 **✅ [Link Shell Extension](http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#contact) - Context menu entry to create symlinks**
 

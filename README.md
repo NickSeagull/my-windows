@@ -106,6 +106,11 @@ The apps listed in this repo follow the following convention:
 
 ## Coding
 
+👜 WSL / Ubuntu 18.04 - Coding environment**
+
+* Not really an app, but it needs to be installed, so it goes on this list. The chocolatey package didn't work for me, so I have to install it manually.
+* WSL allows running Linux apps on Windows, interoperating with your current files, etc... So it is a much better experience than a Virtual Box, or alike.
+
 **✅ [Visual Studio Code](https://code.visualstudio.com/) - My main code editor**
 
 **✅ [Microsoft Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) - Terminal emulator**

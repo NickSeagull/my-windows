@@ -123,7 +123,7 @@ The apps listed in this repo follow the following convention:
   * `export DISPLAY=:0` in the shell `rc` file (this is already done in my Nix config)
   * Save the VcXsrv settings to a safe folder, and add a link into the `shell:startup` directory.
 * If some fonts are not being rendered, it is because in VcXsrv you have to:
-  * Install them _inside_ WSL with your regular installation method (probably it includes using `fc-cache`)
+  * Install them _inside_ WSL with your regular installation method (it probably includes using `fc-cache`)
   * Download them for Windows, and add them to the `C:\Program Files\VcXsrv\fonts` directory
 
 ## Writing

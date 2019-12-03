@@ -117,6 +117,12 @@ The apps listed in this repo follow the following convention:
 
 **✅ [Docker Desktop]( https://www.docker.com/products/docker-desktop ) - Containerization of apps**
 
+**✅ [VcXsrv](https://github.com/ArcticaProject/vcxsrv) - X11 server for Windows**
+
+* VcXsrv is great, it allows you to run **graphical** Linux apps on Windows thanks to the X11 protocol, make sure to:
+  * `export DISPLAY=:0` in the shell `rc` file (this is already done in my Nix config)
+  * Save the VcXsrv settings to a safe folder, and add a link into the `shell:startup` directory.
+
 ## Writing
 
 **✅ [Typora](https://typora.io) - Minimalist WYSIWYG-ish Markdown editor**
@@ -178,6 +184,10 @@ I use most of my command line apps from WSL, apart from a few ones described her
 **✅ [RunInBash]( https://github.com/neosmart/RunInBash ) - Aliases `$` to run any command in WSL**
 
 ### WSL CLI apps
+
+**⚠ `fontconfig` - Font Cache updater**
+
+* For some reason `fontconfig` is not installed by default in WSL Ubuntu 18.04, so I have to install it with `apt`
 
 **⚠ `nix` - A purely functional package manager**
 

@@ -93,7 +93,10 @@ cinst vcxsrv
 # Process exclusions
 @(
 
-  "emacs"
+  "emacs",
+  "npm",
+  "node",
+  "yarn"
 
 ) | ForEach-Object {
   Add-MpPreference -ExclusionProcess $_

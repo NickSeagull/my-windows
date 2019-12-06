@@ -128,6 +128,12 @@ The apps listed in this repo follow the following convention:
 
 ## Writing
 
+**⚠ [Journey](https://2appstudio.com/journey/#win) - Journaling**
+
+* I keep a gratitude journal to be more mindful of the great things that I already have
+* During the day, I take notes here about interesting stuff that happens to me
+* I also keep a mood tracker within here.
+
 **✅ [Typora](https://typora.io) - Minimalist WYSIWYG-ish Markdown editor**
 
 * I use it to edit purely-Markdown repos/files, like this one.

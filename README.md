@@ -53,6 +53,11 @@ The apps listed in this repo follow the following convention:
 - I use Todoist because it has a nice Android app that comes with a shortcut to add to inbox.
 - I'm slowly getting used to GTD, so Todoist is a nice addition for my workflow.
 
+**⚠ [NirvanaHQ](https://help.nirvanahq.com/desktop/) - GTD/Todo lists**
+
+* I'm migrating to Nirvana from Todoist, due to the GTD-specific features that Todoist doesn't provide me.
+* If you want to understand what I mean, check [their tutorial videos](https://www.youtube.com/watch?v=2iw-6iFqq9s&feature=emb_title).
+
 **✅ [Wox](https://wox.one) - Application Launcher**
 
 * When I tried Mac for some years, I fell in love with the [Alfred app]( https://www.alfredapp.com/ ). Wox brings a similar experience to Windows, plus it's open source.

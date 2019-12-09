@@ -74,7 +74,7 @@ CKey(isHold, taps, state){
   BindKey("c", isHold, state)
   if (!isHold) {
     if (enabledLayer == "w"){
-      RunOrActivateTitle("C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe", "*Edge")
+      RunOrActivateTitle("C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe", "ahk_exe msedge.exe")
     } else {
       PassthroughKey("c")
     }

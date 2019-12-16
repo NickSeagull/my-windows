@@ -74,6 +74,7 @@ cinst diffutils  # required by emacs
 cinst peazip
 cinst FiraCode
 cinst vcxsrv
+cinst 
 
 ############################################
 #                                          #

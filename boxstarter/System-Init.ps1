@@ -75,6 +75,7 @@ cinst peazip
 cinst FiraCode
 cinst vcxsrv
 cinst onenote
+cinst obs-studio
 
 ############################################
 #                                          #

@@ -101,7 +101,8 @@ cinst obs-studio
   "yarn",
   "git",
   "stack",
-  "ghc"
+  "ghc",
+  "nix"
 
 ) | ForEach-Object {
   Add-MpPreference -ExclusionProcess $_

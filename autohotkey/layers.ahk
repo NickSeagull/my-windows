@@ -223,7 +223,7 @@ MKey(isHold, taps, state){
       Send {Volume_Up}
     } else if (enabledLayer == "b") {
       Send #{Up}
-  } else if (enabledLayer == "c"){
+    } else if (enabledLayer == "c"){
       Send {}}
     } else if (enabledLayer == "x") {
       Send {Delete}

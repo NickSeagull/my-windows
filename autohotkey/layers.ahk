@@ -276,6 +276,8 @@ PKey(isHold, taps, state){
   if (!isHold){
     if (enabledLayer == "g"){
       WinSearch("apps")
+    } else if (enabledLayer == "e"){
+      
     } else {
       PassthroughKey("p")
     }

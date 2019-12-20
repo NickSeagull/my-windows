@@ -95,6 +95,7 @@ DKey(isHold, taps, state){
 
 EKey(isHold, taps, state){
   if (isHold) {
+    BindKey("g", isHold, state)
   } else {
     if (enabledLayer == "w"){
       Run "explorer.exe"

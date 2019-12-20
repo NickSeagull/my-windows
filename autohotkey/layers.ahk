@@ -277,7 +277,8 @@ PKey(isHold, taps, state){
     if (enabledLayer == "g"){
       WinSearch("apps")
     } else if (enabledLayer == "e"){
-      RunOrActivateTitle("code.exe C:\Users\" . USERNAME . "\OneDrive\Documentos\Projects\my-windows", "Visual Studio Code*my-windows")
+      RunOrActivateTitle("C:\Program Files\Microsoft VS Code\Code.exe"
+        "code.exe C:\Users\" . USERNAME . "\OneDrive\Documentos\Projects\my-windows", "Visual Studio Code*my-windows")
     } else {
       PassthroughKey("p")
     }

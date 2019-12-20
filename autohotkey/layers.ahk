@@ -277,7 +277,7 @@ PKey(isHold, taps, state){
     if (enabledLayer == "g"){
       WinSearch("apps")
     } else if (enabledLayer == "e"){
-      
+      RunOrActivateTitle("code.exe C:")
     } else {
       PassthroughKey("p")
     }

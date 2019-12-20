@@ -262,6 +262,8 @@ OKey(isHold, taps, state){
       Send ó
     } else if (enabledLayer == "q") {
       Send Ó
+    } else if (enabledLayer == "b") {
+      Send 
     } else if (enabledLayer == "w"){
       RunOrActivateTitle("C:\Program Files\Sublime Text 3\sublime_text.exe", "ahk_exe sublime_text.exe")
     } else {

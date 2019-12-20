@@ -93,6 +93,7 @@ DKey(isHold, taps, state){
   }
 }
 
+;; Automation layer
 EKey(isHold, taps, state){
   if (isHold) {
     BindKey("e", isHold, state)

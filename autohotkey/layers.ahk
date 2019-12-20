@@ -94,7 +94,8 @@ DKey(isHold, taps, state){
 }
 
 EKey(isHold, taps, state){
-  if (!isHold) {
+  if (isHold) {
+  } else {
     if (enabledLayer == "w"){
       Run "explorer.exe"
     } else iF (enabledLayer == "p"){

@@ -76,7 +76,7 @@ cinst FiraCode
 cinst vcxsrv
 cinst onenote
 cinst obs-studio
-cinst insomnia-rest-api-client
+cinst steam
 
 ############################################
 #                                          #

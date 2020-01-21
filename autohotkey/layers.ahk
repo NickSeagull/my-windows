@@ -411,6 +411,8 @@ CommaKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "x"){
       Send ^{BackSpace}
+    } else if (enabledLayer == "c"){
+      Send % "["
     } else {
       PassthroughKey(",")
     }
@@ -421,7 +423,7 @@ PeriodKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "x"){
       Send ^{Delete}
-    if (enabledLayer == "c"){
+    } else if (enabledLayer == "c"){
       Send % "]"
     } else {
       PassthroughKey(".")

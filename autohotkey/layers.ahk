@@ -33,7 +33,7 @@ thm.Add("Y", Func("NoOpKey").Bind("y"))
 thm.Add("Z", Func("ZKey"))
 thm.Add("Space", Func("NoOpKey").Bind("{Space}"))
 thm.Add(".", Func("PeriodKey"))
-thm.Add(",", Func("ColonKey"))
+thm.Add(",", Func("CommaKey"))
 thm.Add(";", Func("SemicolonKey"))
 thm.Add("1", Func("OneKey"))
 thm.Add("2", Func("TwoKey"))
@@ -407,7 +407,7 @@ SemicolonKey(isHold, taps, state){
   }
 }
 
-ColonKey(isHold, taps, state){
+CommaKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "x"){
       Send ^{BackSpace}

@@ -412,7 +412,7 @@ CommaKey(isHold, taps, state){
     if (enabledLayer == "x"){
       Send ^{BackSpace}
     } else if (enabledLayer == "c"){
-      Send % "["
+      Send [
     } else {
       PassthroughKey(",")
     }

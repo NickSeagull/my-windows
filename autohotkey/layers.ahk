@@ -421,6 +421,8 @@ PeriodKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "x"){
       Send ^{Delete}
+    if (enabledLayer == "c"){
+      Send % "]"
     } else {
       PassthroughKey(".")
     }

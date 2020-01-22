@@ -393,6 +393,8 @@ YKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "c"){
       Send {+}
+    } else if (enabledLayer == "g"){
+      WoxSearch("youtube ")
     } else {
       PassthroughKey("y")
     }

@@ -541,7 +541,7 @@ ZeroKey(isHold, taps, state){
 ;;;;;;;;;;;;;;;;;;;;;;;;;;  H E L P E R S  ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 WoxSearch(category){
-  Send {LWin}
+  Send {^Space}
   Sleep 100
   Send % category . ": "
 }

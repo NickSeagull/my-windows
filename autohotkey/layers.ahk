@@ -384,6 +384,17 @@ XKey(isHold, taps, state){
   }
 }
 
+YKey(isHold, taps, state){
+  BindKey("y", isHold, state)
+  if (!isHold) {
+    if (enabledLayer == "c"){
+      Send {+}
+    } else {
+      PassthroughKey("y")
+    }
+  }
+}
+
 ZKey(isHold, taps, state){
   BindKey("z", isHold, state)
   if (!isHold) {

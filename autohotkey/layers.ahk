@@ -543,7 +543,7 @@ ZeroKey(isHold, taps, state){
 WoxSearch(category){
   Send ^{Space}
   Sleep 100
-  Send % category . ": "
+  Send % category
 }
 
 BindKey(layerName, isHold, state){

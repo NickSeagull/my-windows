@@ -247,7 +247,7 @@ NKey(isHold, taps, state){
     } else if (enabledLayer == "q"){
       Send Ñ
     } else if (enabledLayer == "g"){
-      WinSearch("documents")
+      WoxSearch("documents")
     } else if (enabledLayer == "w") {
       RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
     } else if (enabledLayer == "x") {
@@ -280,7 +280,7 @@ PKey(isHold, taps, state){
   BindKey("p", isHold, state)
   if (!isHold){
     if (enabledLayer == "g"){
-      WinSearch("apps")
+      WoxSearch("apps")
     } else if (enabledLayer == "e"){
       RunOrActivateTitle("C:\Program Files\Microsoft VS Code\Code.exe C:\Users\" . USERNAME . "\OneDrive\Documentos\Projects\my-windows", "Visual Studio Code*my-windows")
     } else if (enabledLayer == "b") {
@@ -540,7 +540,7 @@ ZeroKey(isHold, taps, state){
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;  H E L P E R S  ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-WinSearch(category){
+WoxSearch(category){
   Send {LWin}
   Sleep 100
   Send % category . ": "

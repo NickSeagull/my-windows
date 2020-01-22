@@ -55,6 +55,8 @@ AKey(isHold, taps, state){
       Send á
     } else if (enabledLayer == "q"){
       Send Á
+    } else if (enabledLayer == "g"){
+      Send Á
     } else {
       PassthroughKey("a")
     }

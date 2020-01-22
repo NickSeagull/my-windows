@@ -247,7 +247,7 @@ NKey(isHold, taps, state){
     } else if (enabledLayer == "q"){
       Send Ñ
     } else if (enabledLayer == "g"){
-      WoxSearch("documents")
+      WoxSearch("")
     } else if (enabledLayer == "w") {
       RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\Programs\Notion\Notion.exe", "ahk_exe Notion.exe")
     } else if (enabledLayer == "x") {

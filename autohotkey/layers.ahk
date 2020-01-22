@@ -346,6 +346,8 @@ UKey(isHold, taps, state){
       Send ú
     } else if (enabledLayer == "q") {
       Send Ú
+    } else if (enabledLayer == "c") {
+      Send {=}
     } else {
       PassthroughKey("u")
     }

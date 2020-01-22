@@ -280,7 +280,7 @@ PKey(isHold, taps, state){
   BindKey("p", isHold, state)
   if (!isHold){
     if (enabledLayer == "g"){
-      WoxSearch("apps")
+      WoxSearch("")
     } else if (enabledLayer == "e"){
       RunOrActivateTitle("C:\Program Files\Microsoft VS Code\Code.exe C:\Users\" . USERNAME . "\OneDrive\Documentos\Projects\my-windows", "Visual Studio Code*my-windows")
     } else if (enabledLayer == "b") {

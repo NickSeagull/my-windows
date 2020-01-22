@@ -543,20 +543,7 @@ ZeroKey(isHold, taps, state){
 WoxSearch(category){
   Send ^{Space}
   Sleep 100
-
-	    WinActivateBottom, %titleName%
-	}
-	Else
-	{
-	  Run %appName%
-	    WinActivate
-  }
-	Return
-}
-
-RunOrActivateEdge(appName){
-	WinActivate, ahk_exe MicrosoftEdgeCP.exe
-}
+  WinActivateBottom, ahk_exe Wox.exe
   Send % category
 }
 

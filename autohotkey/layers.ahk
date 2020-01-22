@@ -334,7 +334,8 @@ TKey(isHold, taps, state){
     if (enabledLayer == "w"){
       RunOrActivateTitle("C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_0.5.2762.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe", "ahk_exe WindowsTerminal.exe")
     } else if (enabledLayer == "z"){
-      RunOrActivateTitle("C:\Program Files\WindowsApps\38833FF26BA1D.UnigramPreview_3.11.2588.0_x86__g9c9v27vpyspw\Unigram.exe", "Unigram")
+      RunOrActivateTitle(
+        "C:\Program Files\WindowsApps\38833FF26BA1D.UnigramPreview_3.11.2588.0_x86__g9c9v27vpyspw\Unigram.exe", "Unigram")
     } else {
       PassthroughKey("t")
     }

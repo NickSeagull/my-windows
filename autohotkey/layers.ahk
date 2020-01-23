@@ -47,7 +47,6 @@ thm.Add("9", Func("NineKey"))
 thm.Add("0", Func("ZeroKey"))
 thm.Add("(", Func("LParenKey"))
 
-;; Window management keys
 LParenKey(isHold, taps, state){
   TrayTip, Key Promoter ⚠, Use 'c + k', 0, 16
 }

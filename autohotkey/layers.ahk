@@ -45,6 +45,8 @@ thm.Add("7", Func("SevenKey"))
 thm.Add("8", Func("EightKey"))
 thm.Add("9", Func("NineKey"))
 thm.Add("0", Func("ZeroKey"))
+
+;; Promoted keys
 thm.Add("(", Func("PromoteShortcut").Bind("c + k"))
 thm.Add(")", Func("PromoteShortcut").Bind("c + l"))
 thm.Add("[", Func("PromoteShortcut").Bind("c + ,"))

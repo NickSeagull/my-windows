@@ -562,7 +562,7 @@ ZeroKey(isHold, taps, state){
 
 PromoteShortcut(shortcut, isHold, taps, state){
   TrayTip, Key Promoter ⚠, Use ' %shortcut% ', 0, 16
-  Sleep 2000
+  Sleep 1500
   TrayTip
 }
 

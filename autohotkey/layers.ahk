@@ -550,8 +550,8 @@ ZeroKey(isHold, taps, state){
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;  H E L P E R S  ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-LParenKey(isHold, taps, state){
-  TrayTip, Key Promoter ⚠, Use 'c + k', 0, 16
+PromoteShortcut(shortcut, isHold, taps, state){
+  TrayTip, Key Promoter ⚠, Use ' %shortcut% ', 0, 16
 }
 
 

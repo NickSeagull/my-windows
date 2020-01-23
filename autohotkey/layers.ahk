@@ -210,7 +210,7 @@ LKey(isHold, taps, state){
     if (enabledLayer == "x"){
       PassthroughKey("{Right}")
     } else if (enabledLayer == "c"){
-      Send {(}
+      Send {)}
     } else if (enabledLayer == "w"){
       RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\slack\slack.exe", "Slack")
     } else if (enabledLayer == "v"){

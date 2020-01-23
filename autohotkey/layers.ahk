@@ -192,7 +192,8 @@ KKey(isHold, taps, state){
   } else {
     if (enabledLayer == "x"){
       PassthroughKey("{Up}")
-    } else if (enabledLayer == "w"){
+    } else if (enabledLayer == "c"){
+      Send {(}
     } else if (enabledLayer == "v"){
       Send {Media_Play_Pause}
     } else {

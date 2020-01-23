@@ -262,8 +262,7 @@ NKey(isHold, taps, state){
     } else if (enabledLayer == "g"){
       WoxSearch("duckduckgo ")
     } else if (enabledLayer == "w") {
-      RunOrActivateTitle("C:\Users\" . USERNAME ."\AppData\Local\Programs\nirvanahq\Nirvana.exe"
-        , "ahk_exe Notion.exe")
+      RunOrActivateTitle("C:\Users\" . USERNAME ."\AppData\Local\Programs\nirvanahq\Nirvana.exe", "ahk_exe Notion.exe")
     } else if (enabledLayer == "x") {
       Send {BackSpace}
     } else {

@@ -49,7 +49,7 @@ thm.Add("(", Func("LParenKey"))
 
 ;; Window management keys
 LParenKey(isHold, taps, state){
-  
+  TrayTip, Key Promoter ⚠, Use 'c + k'
 }
 
 ;; Remap Sticky-A to Shift

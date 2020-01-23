@@ -45,11 +45,8 @@ thm.Add("7", Func("SevenKey"))
 thm.Add("8", Func("EightKey"))
 thm.Add("9", Func("NineKey"))
 thm.Add("0", Func("ZeroKey"))
-thm.Add("(", Func("LParenKey"))
-
-LParenKey(isHold, taps, state){
-  TrayTip, Key Promoter ⚠, Use 'c + k', 0, 16
-}
+thm.Add("(", Func("PromoteShortcut").Bind('c + k'))
+thm.Add(")", Func("PromoteShortcut").Bind('c + k'))
 
 ;; Remap Sticky-A to Shift
 AKey(isHold, taps, state){

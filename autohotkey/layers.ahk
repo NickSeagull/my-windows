@@ -49,14 +49,14 @@ thm.Add("0", Func("ZeroKey"))
 ;; Promoted keys
 thm.Add("(", Func("PromoteShortcut").Bind("c + k"))
 thm.Add(")", Func("PromoteShortcut").Bind("c + l"))
+thm.Add("{", Func("PromoteShortcut").Bind("c + n"))
+thm.Add("}", Func("PromoteShortcut").Bind("c + m"))
 thm.Add("[", Func("PromoteShortcut").Bind("c + ,"))
 thm.Add("]", Func("PromoteShortcut").Bind("c + ."))
 thm.Add("+", Func("PromoteShortcut").Bind("c + y"))
 thm.Add("=", Func("PromoteShortcut").Bind("c + u"))
 thm.Add("-", Func("PromoteShortcut").Bind("c + h"))
 thm.Add("_", Func("PromoteShortcut").Bind("c + j"))
-thm.Add("{", Func("PromoteShortcut").Bind("c + n"))
-thm.Add("}", Func("PromoteShortcut").Bind("c + m"))
 
 ;; Remap Sticky-A to Shift
 AKey(isHold, taps, state){

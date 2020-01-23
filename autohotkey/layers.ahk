@@ -60,6 +60,7 @@ thm.Add("_", Func("PromoteShortcut").Bind("c + j"))
 thm.Add("^BackSpace", Func("PromoteShortcut").Bind("x + ,"))
 thm.Add("BackSpace", Func("PromoteShortcut").Bind("x + n"))
 thm.Add("Delete", Func("PromoteShortcut").Bind("x + m"))
+thm.Add("Delete", Func("PromoteShortcut").Bind("x + m"))
 
 ;; Remap Sticky-A to Shift
 AKey(isHold, taps, state){

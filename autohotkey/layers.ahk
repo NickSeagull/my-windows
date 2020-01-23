@@ -45,6 +45,7 @@ thm.Add("7", Func("SevenKey"))
 thm.Add("8", Func("EightKey"))
 thm.Add("9", Func("NineKey"))
 thm.Add("0", Func("ZeroKey"))
+thm.Add("(", Func("LParenKey"))
 
 ;; Remap Sticky-A to Shift
 AKey(isHold, taps, state){

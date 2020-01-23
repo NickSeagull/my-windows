@@ -550,6 +550,11 @@ ZeroKey(isHold, taps, state){
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;  H E L P E R S  ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+LParenKey(isHold, taps, state){
+  TrayTip, Key Promoter ⚠, Use 'c + k', 0, 16
+}
+
+
 WoxSearch(category){
   Send ^{Space}
   Sleep 100

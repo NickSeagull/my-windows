@@ -49,10 +49,7 @@ thm.Add("(", Func("LParenKey"))
 
 ;; Window management keys
 LParenKey(isHold, taps, state){
-  BindKey("b", isHold, state)
-  if (!isHold) {
-    PassthroughKey("b")
-  }
+ 
 }
 ;; Remap Sticky-A to Shift
 AKey(isHold, taps, state){

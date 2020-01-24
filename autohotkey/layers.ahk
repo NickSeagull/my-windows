@@ -568,10 +568,11 @@ ZeroKey(isHold, taps, state){
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;  H E L P E R S  ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-PromoteShortcut(shortcut, isHold, taps, state){
+PromoteShortcut(shortcut, key, isHold, taps, state){
   TrayTip, Key Promoter ⚠, Use ' %shortcut% ', 0, 16
   Sleep 1500
   TrayTip
+  Send
 }
 
 

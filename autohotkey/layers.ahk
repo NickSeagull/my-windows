@@ -572,7 +572,7 @@ PromoteShortcut(shortcut, key, isHold, taps, state){
   TrayTip, Key Promoter ⚠, Use ' %shortcut% ', 0, 16
   Sleep 1500
   TrayTip
-  Send
+  PassthroughKey(key)
 }
 
 

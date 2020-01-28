@@ -99,7 +99,7 @@
       </Actions>
     </Rule>
     <Rule RuleId="6887284e-3cee-4a92-beae-f0675992f942" Enabled="true">
-      <Description>Backup FileJuggler rules</Description>
+      <Description>Backup FileJuggler Rules</Description>
       <WatchDirectories>
         <WatchDirectory Path="C:\Users\nikit\AppData\Roaming\FileJuggler2" WatchSubDirs="false" />
       </WatchDirectories>
@@ -108,6 +108,13 @@
           <Condition xsi:type="TextVariableCondition" ExpressionType="Contains" SearchType="Text" SearchText="Config">
             <VariableId>acfce4ef-1c54-401c-9aa3-8a385545a418</VariableId>
             <SearchVariableId>00000000-0000-0000-0000-000000000000</SearchVariableId>
+          </Condition>
+          <Condition xsi:type="DateVariableCondition">
+            <VariableId>fe013bf3-27cc-4956-8533-bd4662784783</VariableId>
+            <Number>1</Number>
+            <Date>2020-01-21T11:05:09.5731843+00:00</Date>
+            <DateInterval>Hours</DateInterval>
+            <Comparison>NewerThan</Comparison>
           </Condition>
         </Conditions>
       </Condition>

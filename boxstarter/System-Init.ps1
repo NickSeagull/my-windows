@@ -77,7 +77,7 @@ cinst vcxsrv
 cinst onenote
 cinst obs-studio
 cinst steam
-cinst 
+cinst powershell-preview
 
 ############################################
 #                                          #

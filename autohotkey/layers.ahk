@@ -180,8 +180,7 @@ IKey(isHold, taps, state){
       Send í
     } else if (enabledLayer == "q") {
       Send Í
-    } else if (enabledLayer == "w"){
-      RunOrActivateEdge("notepad.exe")
+    } else if (enabledLayer == "g"){
     } else {
       PassthroughKey("i")
     }

@@ -577,7 +577,7 @@ PromoteShortcut(shortcut, key, isHold, taps, state){
 
 
 WoxSearch(category){
-  Send ^{Space}
+  Send ^!+{Space}
   Sleep 100
   WinActivateBottom, ahk_exe Wox.exe
   Send % category

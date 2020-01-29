@@ -182,6 +182,7 @@ IKey(isHold, taps, state){
       Send Í
     } else if (enabledLayer == "g"){
       RunOrActivateTitle("C:\Users\" . USERNAME . "\AppData\Local\Programs\nirvanahq\Nirvana.exe", "ahk_exe Nirvana.exe")
+      Send I
     } else {
       PassthroughKey("i")
     }

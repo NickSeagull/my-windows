@@ -255,7 +255,7 @@ MKey(isHold, taps, state){
     } else if (enabledLayer == "x") {
       Send {Delete}
     } else if (enabledLayer == "q") {
-      Run code 
+      Run code C:\Users\nikit\dev\my-windows
     } else {
       PassthroughKey("m")
     }

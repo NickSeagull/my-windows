@@ -254,8 +254,6 @@ MKey(isHold, taps, state){
       Send {}}
     } else if (enabledLayer == "x") {
       Send {Delete}
-    } else if (enabledLayer == "q") {
-      Run % "code.exe C:\Users\nikit\dev\my-windows"
     } else {
       PassthroughKey("m")
     }
@@ -308,7 +306,7 @@ PKey(isHold, taps, state){
     if (enabledLayer == "g"){
       WoxSearch("")
     } else if (enabledLayer == "e"){
-      RunOrActivateTitle("C:\Program Files\Microsoft VS Code\Code.exe C:\Users\" . USERNAME . "\OneDrive\Documentos\Projects\my-windows", "Visual Studio Code*my-windows")
+      RunOrActivateTitle("C:\Program Files\Microsoft VS Code\Code.exe C:\Users\" . USERNAME . "\dev\my-windows", "Visual Studio Code*my-windows")
     } else if (enabledLayer == "x") {
       Send {Tab}
     } else if (enabledLayer == "b") {

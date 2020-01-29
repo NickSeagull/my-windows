@@ -254,6 +254,8 @@ MKey(isHold, taps, state){
       Send {}}
     } else if (enabledLayer == "x") {
       Send {Delete}
+    } else if (enabledLayer == "q") {
+      Send {Delete}
     } else {
       PassthroughKey("m")
     }

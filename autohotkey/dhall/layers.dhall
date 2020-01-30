@@ -1,6 +1,5 @@
-let Key = <
-  
->
-let Layer = { description: Text, key: Key, rules: List rule }
+let Key = < A | B | C >
+
+let Layer = { description : Text, key : Key, rules : List rule }
 
 in  42

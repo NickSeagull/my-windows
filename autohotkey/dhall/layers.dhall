@@ -1,6 +1,6 @@
 let Key = < A | B | C >
 
-let Action = < RemapTo >
+let Action = < >
 
 let Rule = {
   key: Key

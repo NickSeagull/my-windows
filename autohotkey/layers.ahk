@@ -581,7 +581,7 @@ WoxSearch(category){
   Send ^!+{Space}
   Sleep 100
   WinActivateBottom, ahk_exe Wox.exe
-  Send ^A
+  Send ^{A}
   Send {BackSpace}
   Send % category
 }

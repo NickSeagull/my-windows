@@ -1,5 +1,5 @@
 let x
-    : < Bool | Natural >
+    :  Bool | Natural 
     = 2
 
 in  x

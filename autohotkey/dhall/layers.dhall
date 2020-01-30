@@ -1,4 +1,4 @@
-let Layer = {}
+let Layer = { description: Text, key: Key, rules: List rule }
 
 let x
     : X

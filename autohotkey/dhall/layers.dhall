@@ -1,1 +1,5 @@
-let x = 2 in x
+let x
+    : < Bool | Natural >
+    = 2
+
+in  x

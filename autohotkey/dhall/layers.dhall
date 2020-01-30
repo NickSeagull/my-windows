@@ -1,1 +1,7 @@
-let X = < Bool | Natural > in x
+let X = < Bool | Natural >
+
+let x
+    : X
+    = True
+
+in  x

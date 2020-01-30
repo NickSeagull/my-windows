@@ -1,6 +1,6 @@
 let Key = < A | B | C >
 
-let Action = < >
+let Action = < CallFunction Text | RawAction Text >
 
 let Rule = {
   key: Key

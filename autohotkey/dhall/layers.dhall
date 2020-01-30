@@ -1,5 +1,5 @@
 let x
     : < A : Bool | B : Natural >
-    = { A : true }
+    = { A : True }
 
 in  x

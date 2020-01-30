@@ -2,6 +2,6 @@ let X = < Bool | Natural >
 
 let x
     : X
-    = True
+    = X.True
 
 in  x

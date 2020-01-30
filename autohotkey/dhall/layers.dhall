@@ -1,4 +1,4 @@
-let X = < Bool | Natural >
+let Layer = {}
 
 let x
     : X

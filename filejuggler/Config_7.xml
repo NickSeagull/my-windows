@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileJugglerConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.filejuggler.com/FileJugglerConfiguration/2.1">
+  <Rules>
+    <Rule RuleId="df834e08-3e87-46a2-8e8e-ae501f07da7d" Enabled="true">
+      <Description>Autocommit my-windows</Description>
+      <WatchDirectories>
+        <WatchDirectory Path="C:\Users\nikit\dev\my-windows" WatchSubDirs="true" />
+      </WatchDirectories>
+      <Condition xsi:type="ConditionListAll">
+        <Conditions>
+          <Condition xsi:type="TextVariableCondition" ExpressionType="DoesNotContain" SearchType="Text" SearchText=".git">
+            <VariableId>099cfe90-8a71-4d02-ab8f-e635ba3c9904</VariableId>
+            <SearchVariableId>00000000-0000-0000-0000-000000000000</SearchVariableId>
+          </Condition>
+          <Condition xsi:type="DateVariableCondition">
+            <VariableId>fe013bf3-27cc-4956-8533-bd4662784783</VariableId>
+            <Number>1</Number>
+            <Date>2019-11-15T16:36:02.241241+00:00</Date>
+            <DateInterval>Hours</DateInterval>
+            <Comparison>NewerThan</Comparison>
+          </Condition>
+        </Conditions>
+      </Condition>
+      <Actions>
+        <Action xsi:type="RunCommand">
+          <Command>cd C:\Users\nikit\dev\my-windows &amp; git add . &amp; git commit -m update &amp; git push</Command>
+        </Action>
+      </Actions>
+    </Rule>
+    <Rule RuleId="f0f3569b-73a3-47b1-b9c9-3c7a099eee3d" Enabled="true">
+      <Description>Delete temporary downloads</Description>
+      <WatchDirectories>
+        <WatchDirectory Path="C:\Users\nikit\Downloads" WatchSubDirs="false" />
+      </WatchDirectories>
+      <Condition xsi:type="ConditionListAll">
+        <Conditions>
+          <Condition xsi:type="DateVariableCondition">
+            <VariableId>573d1fb0-73c3-41fb-8c99-363aaf88418f</VariableId>
+            <Number>1</Number>
+            <Date>2019-11-15T16:49:14.1927042+00:00</Date>
+            <DateInterval>Days</DateInterval>
+            <Comparison>OlderThan</Comparison>
+          </Condition>
+          <Condition xsi:type="TextVariableCondition" ExpressionType="Is" SearchType="Variable">
+            <VariableId>acfce4ef-1c54-401c-9aa3-8a385545a418</VariableId>
+            <SearchVariableId>28b0c8dc-8f80-4d96-a063-f8b3c555121a</SearchVariableId>
+          </Condition>
+        </Conditions>
+      </Condition>
+      <Actions>
+        <Action xsi:type="SendToRecycleBin">
+          <RemoveEmptyFolder>false</RemoveEmptyFolder>
+        </Action>
+      </Actions>
+    </Rule>
+    <Rule RuleId="0d345736-4d36-46a2-9877-466591b7d552" Enabled="true">
+      <Description>Auto Commit Second Brain</Description>
+      <WatchDirectories>
+        <WatchDirectory Path="C:\Users\nikit\dev\second-brain" WatchSubDirs="true" />
+      </WatchDirectories>
+      <Condition xsi:type="ConditionListAll">
+        <Conditions>
+          <Condition xsi:type="TextVariableCondition" ExpressionType="DoesNotContain" SearchType="Text" SearchText=".git">
+            <VariableId>099cfe90-8a71-4d02-ab8f-e635ba3c9904</VariableId>
+            <SearchVariableId>00000000-0000-0000-0000-000000000000</SearchVariableId>
+          </Condition>
+          <Condition xsi:type="DateVariableCondition">
+            <VariableId>fe013bf3-27cc-4956-8533-bd4662784783</VariableId>
+            <Number>1</Number>
+            <Date>2019-11-16T22:43:27.8606345+00:00</Date>
+            <DateInterval>Hours</DateInterval>
+            <Comparison>NewerThan</Comparison>
+          </Condition>
+        </Conditions>
+      </Condition>
+      <Actions>
+        <Action xsi:type="RunCommand">
+          <Command>cd "C:\Users\nikit\dev\second-brain" &amp; git add . &amp; git commit -m "update" &amp; git push</Command>
+        </Action>
+      </Actions>
+    </Rule>
+    <Rule RuleId="c0ecba33-a7e9-49e6-bc95-f1237b51a737" Enabled="true">
+      <Description>Move books to OneDrive</Description>
+      <WatchDirectories>
+        <WatchDirectory Path="C:\Users\nikit\Downloads" WatchSubDirs="true" />
+      </WatchDirectories>
+      <Condition xsi:type="ConditionListAll">
+        <Conditions>
+          <Condition xsi:type="TextVariableCondition" ExpressionType="Contains" SearchType="Variable">
+            <VariableId>acfce4ef-1c54-401c-9aa3-8a385545a418</VariableId>
+            <SearchVariableId>e52afb40-0506-4183-93ee-f3370bdeb650</SearchVariableId>
+          </Condition>
+        </Conditions>
+      </Condition>
+      <Actions>
+        <Action xsi:type="MoveFile" TargetDirectory="C:\Users\nikit\OneDrive\Documentos\Libros" TargetFileExists="Rename" MaintainSubfolderStructure="false">
+          <RemoveEmptyFolder>false</RemoveEmptyFolder>
+        </Action>
+      </Actions>
+    </Rule>
+    <Rule RuleId="6887284e-3cee-4a92-beae-f0675992f942" Enabled="true">
+      <Description>Backup FileJuggler Rules</Description>
+      <WatchDirectories>
+        <WatchDirectory Path="C:\Users\nikit\AppData\Roaming\FileJuggler2" WatchSubDirs="false" />
+      </WatchDirectories>
+      <Condition xsi:type="ConditionListAll">
+        <Conditions>
+          <Condition xsi:type="TextVariableCondition" ExpressionType="Contains" SearchType="Text" SearchText="Config">
+            <VariableId>acfce4ef-1c54-401c-9aa3-8a385545a418</VariableId>
+            <SearchVariableId>00000000-0000-0000-0000-000000000000</SearchVariableId>
+          </Condition>
+          <Condition xsi:type="DateVariableCondition">
+            <VariableId>fe013bf3-27cc-4956-8533-bd4662784783</VariableId>
+            <Number>1</Number>
+            <Date>2020-01-21T11:05:09.5731843+00:00</Date>
+            <DateInterval>Hours</DateInterval>
+            <Comparison>NewerThan</Comparison>
+          </Condition>
+        </Conditions>
+      </Condition>
+      <Actions>
+        <Action xsi:type="CopyFile" TargetDirectory="C:\Users\nikit\dev\my-windows\filejuggler" TargetFileExists="Rename" MaintainSubfolderStructure="false">
+          <FollowTargetFile>false</FollowTargetFile>
+        </Action>
+      </Actions>
+    </Rule>
+  </Rules>
+  <UserVariables>
+    <Variable xsi:type="FileContentsRegexVariable" Title="Starts with 't.'" Id="28b0c8dc-8f80-4d96-a063-f8b3c555121a">
+      <Occurrence Number="1" FromTop="true" />
+      <RegularExpression>t\..*$</RegularExpression>
+      <CaptureGroupUsage>Everything</CaptureGroupUsage>
+      <IgnoreCase>true</IgnoreCase>
+    </Variable>
+    <Variable xsi:type="FileContentsRegexVariable" Title="Starts with 'b.'" Id="e52afb40-0506-4183-93ee-f3370bdeb650">
+      <Occurrence Number="1" FromTop="true" />
+      <RegularExpression>b\..*$</RegularExpression>
+      <CaptureGroupUsage>Everything</CaptureGroupUsage>
+      <IgnoreCase>true</IgnoreCase>
+    </Variable>
+  </UserVariables>
+</FileJugglerConfiguration>

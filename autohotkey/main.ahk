@@ -1,10 +1,10 @@
-﻿; Include libraries
+﻿setTitleMatchMode, 2
+; Include libraries
 #Include <TapHoldManager>
 #Include <RunOrActivate>
 #Include remappings.ahk
 
 
-setTitleMatchMode, 2
 
 
 initialize_layers:

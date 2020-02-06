@@ -3,11 +3,13 @@ Capslock::
 Send {Esc}
 return
 
+; Assign Ctrl-Alt-R as a hotkey to restart the script.
 ^!r::
-Reload  ; Assign Ctrl-Alt-R as a hotkey to restart the script.
+Reload
 TrayTip, AHK Main Reloaded ✅, ✨✨✨, 0, 16
 return
 
+; Enable layers using Ctrl-Alt-E
 ^!e::
 Gosub, initialize_layers
 return

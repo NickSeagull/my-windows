@@ -1,4 +1,6 @@
-﻿global USERNAME := "nikit"
+﻿#include layers/thm-init.ahk
+
+global USERNAME := "nikit"
 
 ;; Remap Sticky-A to Shift
 AKey(isHold, taps, state){

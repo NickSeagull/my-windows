@@ -1,4 +1,3 @@
-
 ; Basic AHK configuration
 #Include init.ahk
 

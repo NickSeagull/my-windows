@@ -2,8 +2,8 @@
 #Include init.ahk
 
 ; Libraries
-#Include <TapHoldManager>
 #Include <RunOrActivate>
+#Include <TapHoldManager>
 
 ; Remappings (not layers)
 #Include remappings.ahk

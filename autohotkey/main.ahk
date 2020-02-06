@@ -1,4 +1,5 @@
 ﻿; Autoreload script on changes
+; FIXME: Only checks current file
 SetTimer,check_reload,1000
 
 check_reload:

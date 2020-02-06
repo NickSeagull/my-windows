@@ -7,7 +7,10 @@ Reload  ; Assign Ctrl-Alt-R as a hotkey to restart the script.
 TrayTip, AHK Main Reloaded ✅, ✨✨✨, 0, 16
 return
 
-^!r::
+^!e::
+Gosub, initialize_layers
+return
+
 return
 initialize_layers:
 #Include layers.ahk

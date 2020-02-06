@@ -6,3 +6,7 @@ authors = ["nikitatchayka+pahket@outlook.com"]
 [[dependencies]]
 name = "TapHoldManager"
 git = "git@github.com:evilC/TapHoldManager.git"
+
+[[dependencies]]
+name = "RunOrActivate"
+git = "git@github.com:NickSeagull/RunOrActivate.git"

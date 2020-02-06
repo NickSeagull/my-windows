@@ -1,4 +1,7 @@
 ﻿#Include remappings.ahk
+#Include <TapHoldManager>
+#Include <RunOrActivate>
+
 
 setTitleMatchMode, 2
 

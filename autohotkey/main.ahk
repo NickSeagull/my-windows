@@ -1,5 +1,4 @@
-﻿setTitleMatchMode, 2
-; Include libraries
+﻿; Include libraries
 #Include <TapHoldManager>
 #Include <RunOrActivate>
 #Include remappings.ahk

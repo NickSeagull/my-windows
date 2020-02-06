@@ -322,7 +322,7 @@ VKey(isHold, taps, state){
   BindKey("v", isHold, state)
   if (!isHold) {
     if (enabledLayer == "w"){
-      RunOrActivateTitle("code.exe", "Visual Studio Code")
+      RunOrActivateTitle("C:\Program Files\Microsoft VS Code\Code.exe", "Visual Studio Code")
     }
     PassthroughKey("v")
   }

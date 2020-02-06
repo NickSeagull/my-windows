@@ -5,7 +5,7 @@
 #Include <TapHoldManager>
 #Include <RunOrActivate>
 
-; 
+; Remappings (not layers)
 #Include remappings.ahk
 
 

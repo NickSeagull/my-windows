@@ -1,7 +1,7 @@
 ﻿; Autoreload script on changes
-SetTimer,UPDATEDSCRIPT,1000
+SetTimer,check_reload,1000
 
-UPDATEDSCRIPT:
+check_reload:
 FileGetAttrib,attribs,%A_ScriptFullPath%
 IfInString,attribs,A
 {

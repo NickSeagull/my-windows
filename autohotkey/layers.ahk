@@ -1,7 +1,4 @@
-﻿#Include <TapHoldManager>
-#Include <RunOrActivate>
-
-global USERNAME := "nikit"
+﻿global USERNAME := "nikit"
 
 global enabledLayer := ""
 thm := new TapHoldManager(0, 175, 1, "$*")

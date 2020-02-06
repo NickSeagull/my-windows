@@ -4,5 +4,5 @@ version = "0.0.1"
 authors = ["nikitatchayka+pahket@outlook.com"]
 
 [[dependencies]]
-name = "AHKhttp"
-git = "https://github.com/zhamlin/AHKhttp.git"
+name = "TapHoldManager"
+git = "git@github.com:evilC/TapHoldManager.git"

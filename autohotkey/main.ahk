@@ -16,4 +16,4 @@ return
 
 initialize_layers:
   #Include layers.ahk
-  ; TrayTip, Layers initialized ✅, ✨✨✨, 0, 16
+  TrayTip, Layers initialized ✅, ✨✨✨, 0, 16

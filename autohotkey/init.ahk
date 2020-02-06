@@ -11,7 +11,7 @@ Sleep,500
 Reload
 }
 Return
-;ENDOFSCRIPT
+
 #SingleInstance, Force
 #KeyHistory, 0
 SetBatchLines, -1

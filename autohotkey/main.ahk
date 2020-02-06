@@ -8,7 +8,7 @@ TrayTip, AHK Main Reloaded ✅, ✨✨✨, 0, 16
 return
 
 ^!e::
-Gosub, initialize_layers
+Gosub, initialize_layerssss
 return
 
 initialize_layerssss:

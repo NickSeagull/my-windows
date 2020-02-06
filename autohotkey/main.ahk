@@ -7,6 +7,3 @@
 
 ; Remappings (not layers)
 #Include remappings.ahk
-
-
-

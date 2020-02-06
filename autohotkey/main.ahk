@@ -1,6 +1,11 @@
-﻿; Include libraries
+﻿; Basic AHK configuration
+#Include init.ahk
+
+; Libraries
 #Include <TapHoldManager>
 #Include <RunOrActivate>
+
+; 
 #Include remappings.ahk
 
 

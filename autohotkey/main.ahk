@@ -15,8 +15,7 @@ SplashTextOn,,,Updated script,
 Sleep,500
 Reload
 }
+ToolTip("foo")
 Return
 
 #Include includes.ahk
-
-ToolTip("foo")

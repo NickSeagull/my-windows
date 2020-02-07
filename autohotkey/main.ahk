@@ -18,3 +18,5 @@ Return
 ToolTip(msg){
   MsgBox, % msg
 }
+
+ToolTip("foo")

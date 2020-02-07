@@ -14,3 +14,7 @@ Reload
 Return
 
 #Include includes.ahk
+
+ToolTip(){
+  MsgBox, LOL
+}

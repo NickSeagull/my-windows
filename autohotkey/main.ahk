@@ -16,5 +16,5 @@ Return
 #Include includes.ahk
 
 ToolTip(msg){
-  MsgBox, LOL
+  MsgBox, % msg
 }

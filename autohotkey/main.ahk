@@ -1,6 +1,10 @@
 ﻿; Autoreload script on changes
 ; FIXME: Only checks current file
 SetTimer,check_reload,1000
+ToolTip(msg){
+ MsgBox, % msg
+}
+
 
 check_reload:
 FileGetAttrib,attribs,%A_ScriptFullPath%
@@ -14,9 +18,5 @@ Reload
 Return
 
 #Include includes.ahk
-
-ToolTip(msg){
-  MsgBox, % msg
-}
 
 ToolTip("foo")

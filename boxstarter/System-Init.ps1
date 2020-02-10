@@ -78,6 +78,7 @@ cinst onenote
 cinst obs-studio
 cinst steam
 cinst powershell-preview
+cinst screentogif
 
 ############################################
 #                                          #

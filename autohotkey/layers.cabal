@@ -6,7 +6,7 @@ author:              Nikita Tchayka
 maintainer:          nick@booster.cloud
 
 executable layers
-  main-is:             Main.hs
+  main-is:             Layers.hs
   build-depends:       base ^>=4.12.0.0
                      , layering
   default-language:    Haskell2010

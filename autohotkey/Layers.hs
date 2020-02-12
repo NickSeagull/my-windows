@@ -1,7 +1,7 @@
-{-# LANGUAGE OverloadedStrings #-}
 module Main where
 
 import Layering
+import Data.String.Interpolate (i)
 
 main :: IO ()
 main = render
@@ -11,11 +11,10 @@ main = render
     onHold = none,
     description = "General apps",
     rules = [
-      (V, "")
+      (V, activate "C:\\Program Files\\Microsoft VS Code\\Code.exe" "Visual Studio Code")
     ]
-  }
+    }
   ]
 
 activate :: String -> String -> String
-activate path title =
-  "RunOrActivateTitle(\"" <> path <> ", " <>
+activate path title = [i|RunOrActivateTitle("#{path}", "#{title}")|]

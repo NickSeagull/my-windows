@@ -202,12 +202,7 @@ NKey(isHold, taps, state){
     if (enabledLayer == "v") {
       Send {Volume_Down}
     } else if (enabledLayer == "d"){
-      ClipSaved := ClipboardAll   ; Save the entire clipboard to a variable of your choice.
-      Send ^c
-      ClipWait
-      MsgBox, % "explorer.exe " . ClipboardAll
-      Clipboard := ClipSaved   ; Restore the original clipboard. Note the use of Clipboard (not ClipboardAll).
-      ClipSaved := ""   ; Free the memory in case the clipboard was very large.
+      Run % "explorer.exe " . Clipboard
     } else if (enabledLayer == "c"){
       Send {{}
     } else if (enabledLayer == "p"){

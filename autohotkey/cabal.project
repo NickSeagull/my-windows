@@ -1,6 +1,0 @@
-packages: .
-
-source-repository-package
-    type: git
-    location: git@github.com:NickSeagull/layering.git
-    tag: 1c7783c47b36b8d93b2a8d0af5b891f8cc0485cf

@@ -41,6 +41,7 @@ CKey(isHold, taps, state){
 
 ;; Remap Sticky-D to Alt
 DKey(isHold, taps, state){
+  BindKey("d", isHold, state)
   if (isHold){
     Send % "{Alt " (state? "down" : "up") "}"
   } else {
@@ -200,6 +201,13 @@ NKey(isHold, taps, state){
   if (!isHold) {
     if (enabledLayer == "v") {
       Send {Volume_Down}
+    } else if (enabledLayer == "d"){
+      ClipSaved := ClipboardAll   ; Save the entire clipboard to a variable of your choice.
+      Send ^c
+      ClipWait
+      MsgBox, % "explorer.exe " . ClipboardAll
+      Clipboard := ClipSaved   ; Restore the original clipboard. Note the use of Clipboard (not ClipboardAll).
+      ClipSaved := ""   ; Free the memory in case the clipboard was very large.
     } else if (enabledLayer == "c"){
       Send {{}
     } else if (enabledLayer == "p"){

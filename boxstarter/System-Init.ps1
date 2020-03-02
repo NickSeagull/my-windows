@@ -78,6 +78,8 @@ cinst obs-studio
 cinst steam
 cinst powershell-preview
 cinst screentogif
+cinst copyq
+cinst Firefox
 
 ############################################
 #                                          #

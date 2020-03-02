@@ -6,6 +6,21 @@
 
 ![desktop](https://i.imgur.com/3Qf25H8.png)
 
+# Table of Contents
+
+- [Security](#security)
+- [Productivity](#productivity)
+- [Coding](#coding)
+- [Writing](#writing)
+- [Social](#social)
+- [Music](#music)
+- [Web browsing](#web-browsing)
+  - [Firefox extensions](#firefox-extensions)
+- [Command Line Apps](#command-line-apps)
+  - [Windows CLI apps](#windows-cli-apps)
+  - [WSL CLI apps](#wsl-cli-apps)
+- [Set DNS to DNS.Watch](#set-dns-to-dnswatch)
+
 # Applications
 
 I use [BoxStarter](https://boxstarter.org/) in order to automate the installation of most of my applications. The process usually goes like this:
@@ -105,6 +120,8 @@ The apps listed in this repo follow the following convention:
 
 ![filejuggler screenshot](screenshots/filejuggler.png)
 
+**✅ [CopyQ](https://hluk.github.io/CopyQ/) - Clipboard Manager**
+
 **✅ [Transmission]( https://transmissionbt.com/ ) - Torrent client**
 
 * I use this client to share files from time to time, very minimal one, which I like.
@@ -115,7 +132,7 @@ The apps listed in this repo follow the following convention:
 
 **✅ [Microsoft Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) - Terminal emulator**
 
-👜 [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
+**👜 [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
 
 * Not really an app, but it needs to be installed, so it goes on this list. The chocolatey package didn't work for me, so I have to install it manually.
 * WSL allows running Linux apps on Windows, interoperating with your current files, etc... So it is a much better experience than a Virtual Box, or alike.
@@ -171,17 +188,17 @@ The apps listed in this repo follow the following convention:
 
 ## Web browsing
 
-**✅ [Microsoft Edge Insider]( https://www.microsoftedgeinsider.com/en-us/ )**
+**✅ [Firefox](getfirefox.com)**
 
-- Edge Insider is a Chrome-compatible alternative. It is owned by Microsoft, meaning that it is (will be?, it is currently beta) optimized for Surface devices, and compatible with all the Chrome addons.
+- Started using Firefox because it is lighter on my systems. Ended up staying because I'm not missing anything from a software derived from Google's work, and because I support software diversity.
 
-### Edge Insider extensions
+### Firefox extensions
 
-**[Vimium](https://vimium.github.io/)**
+**[Vimium](https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/)**
 
-**[1password](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk)**
+**[1password](https://1password.com/browsers/firefox/)**
 
-**[uBlock Origin]( https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm )**
+**[uBlock Origin](https://addons.mozilla.org/es/firefox/addon/ublock-origin/)**
 
 ## Command Line Apps
 

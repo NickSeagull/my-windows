@@ -13,6 +13,9 @@ matches:
   - trigger: ":imo"
     replace: "in my opinion"
 
+  - trigger: ":hu"
+    replace: "have you"
+
   - trigger: ":asap"
     replace: "as soon as possible"
 
@@ -56,7 +59,7 @@ matches:
     replace: "Nikita Tchayka Razumov"
 
   - trigger: ":email"
-    replace: "nikitatchayka@gmail.com"
+    replace: "nikitatchayka@outlook.com"
 
   - trigger: ":wemail"
     replace: "nick@theagilemonkeys.com"

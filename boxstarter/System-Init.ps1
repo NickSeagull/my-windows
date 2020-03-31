@@ -80,6 +80,7 @@ cinst powershell-preview
 cinst screentogif
 cinst copyq
 cinst Firefox
+cinst greenshot
 
 ############################################
 #                                          #

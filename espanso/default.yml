@@ -32,6 +32,9 @@ matches:
   - trigger: ":def"
     replace: "definitely"
 
+  - trigger: ":gql"
+    replace: "GraphQL"
+
   # Code
   - trigger: ":mdc"
     replace: "```\n\n```"
@@ -78,3 +81,9 @@ matches:
 
   - trigger: ":shrug"
     replace: "¯\\_(ツ)_/¯"
+
+  - trigger: ":tableflip"
+    replace: "(╯°□°）╯︵ ┻━┻"
+
+  - trigger: ":lenny"
+    replace: "( ͡° ͜ʖ ͡°)"

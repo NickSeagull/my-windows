@@ -10,37 +10,37 @@ toggle_key: OFF
 # it gets replaced by the "replace" string.
 matches:
   # Phrases
-  - trigger: ":imo"
+  - trigger: ";imo"
     replace: "in my opinion"
 
-  - trigger: ":hu"
+  - trigger: ";hu"
     replace: "have you"
 
-  - trigger: ":asap"
+  - trigger: ";asap"
     replace: "as soon as possible"
 
-  - trigger: ":btw"
+  - trigger: ";btw"
     replace: "by the way"
 
-  - trigger: ":fwis"
+  - trigger: ";fwis"
     replace: "from what I see"
 
-  - trigger: ":ofc"
+  - trigger: ";ofc"
     replace: "of course"
 
   # Words
-  - trigger: ":def"
+  - trigger: ";def"
     replace: "definitely"
 
-  - trigger: ":gql"
+  - trigger: ";gql"
     replace: "GraphQL"
 
   # Code
-  - trigger: ":mdc"
+  - trigger: ";mdc"
     replace: "```\n\n```"
 
   # Dates
-  - trigger: ":date"
+  - trigger: ";date"
     replace: "{{mydate}}"
     vars:
       - name: mydate
@@ -48,30 +48,39 @@ matches:
         params:
           format: "%d/%m/%Y"
 
+  # Zettelkasten
+  - trigger: ";zid"
+    replace: "§{{mydate}} - "
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y%m%d%H%M"
+
   # Personal info
-  - trigger: ":name"
+  - trigger: ";name"
     replace: "Nikita"
 
-  - trigger: ":sname"
+  - trigger: ";sname"
     replace: "Tchayka"
 
-  - trigger: ":fsname"
+  - trigger: ";fsname"
     replace: "Tchayka Razumov"
 
-  - trigger: ":fname"
+  - trigger: ";fname"
     replace: "Nikita Tchayka Razumov"
 
-  - trigger: ":email"
+  - trigger: ";email"
     replace: "nikitatchayka@outlook.com"
 
-  - trigger: ":wemail"
-    replace: "nick@theagilemonkeys.com"
+  - trigger: ";wemail"
+    replace: "nick@booster.cloud"
 
-  - trigger: ":address"
+  - trigger: ";address"
     replace: "Calle Tamara 13"
 
   # Shell commands
-  - trigger: ":shell"
+  - trigger: ";shell"
     replace: "{{output}}"
     vars:
       - name: output
@@ -79,11 +88,11 @@ matches:
         params:
           cmd: "echo Hello from your shell"
 
-  - trigger: ":shrug"
+  - trigger: ";shrug"
     replace: "¯\\_(ツ)_/¯"
 
-  - trigger: ":tableflip"
+  - trigger: ";tableflip"
     replace: "(╯°□°）╯︵ ┻━┻"
 
-  - trigger: ":lenny"
+  - trigger: ";lenny"
     replace: "( ͡° ͜ʖ ͡°)"

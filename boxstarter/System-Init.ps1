@@ -62,6 +62,7 @@ cinst Firefox
 cinst greenshot
 
 # Command line tools
+cinst awscli
 cinst bat
 cinst RunInBash
 cinst bottom

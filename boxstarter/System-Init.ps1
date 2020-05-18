@@ -60,6 +60,7 @@ cinst obs-studio
 cinst screentogif
 cinst Firefox
 cinst greenshot
+cinst vlc
 
 # Command line tools
 cinst awscli

@@ -61,6 +61,7 @@ cinst screentogif
 cinst Firefox
 cinst greenshot
 cinst vlc
+cinst SublimeText3
 
 # Command line tools
 cinst awscli

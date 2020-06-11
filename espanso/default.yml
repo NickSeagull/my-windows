@@ -35,6 +35,15 @@ matches:
   - trigger: ";gql"
     replace: "GraphQL"
 
+  - trigger: ";bst"
+    replace: "Booster"
+
+  - trigger: ";ror"
+    replace: "Ruby on Rails"
+
+  - trigger: ";bdi"
+    replace: "Buenos días!"
+
   # Code
   - trigger: ";mdc"
     replace: "```\n\n```"
@@ -88,6 +97,7 @@ matches:
         params:
           cmd: "echo Hello from your shell"
 
+  # Emoji
   - trigger: ";shrug"
     replace: "¯\\_(ツ)_/¯"
 

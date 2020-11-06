@@ -31,8 +31,6 @@ mkdir $env:USERPROFILE\Projects
 #                                          #
 ############################################
 cinst autohotkey
-cinst 1password
-cinst manictime
 cinst vscode
 cinst microsoft-windows-terminal
 cinst LinkShellExtension
@@ -44,17 +42,15 @@ cinst transmission
 cinst zoom
 cinst git
 cinst nodejs
-cinst visualstudio2019community  # required to work with native packages with Rust/TS
-cinst hasklig
 cinst powershell-core
-cinst cmake      # required by visual studio for some packages
 cinst peazip
 cinst vcxsrv
-cinst onenote
 cinst obs-studio
 cinst screentogif
 cinst greenshot
 cinst vlc
+cinst firacodenf
+cinst voicemeeter
 
 # Command line tools
 cinst awscli

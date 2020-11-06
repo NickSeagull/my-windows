@@ -35,13 +35,11 @@ cinst 1password
 cinst manictime
 cinst vscode
 cinst microsoft-windows-terminal
-cinst microsoft-edge
 cinst LinkShellExtension
 cinst slack
 cinst spotify
 cinst discord
 cinst windowsfirewallcontrol
-cinst docker-desktop
 cinst transmission
 cinst zoom
 cinst git
@@ -50,18 +48,13 @@ cinst visualstudio2019community  # required to work with native packages with Ru
 cinst hasklig
 cinst powershell-core
 cinst cmake      # required by visual studio for some packages
-cinst vagrant
-cinst haskell-stack
-cinst diffutils  # required by emacs
 cinst peazip
 cinst vcxsrv
 cinst onenote
 cinst obs-studio
 cinst screentogif
-cinst Firefox
 cinst greenshot
 cinst vlc
-cinst SublimeText3
 
 # Command line tools
 cinst awscli

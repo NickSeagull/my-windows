@@ -63,22 +63,6 @@ The apps listed in this repo follow the following convention:
 - AHK provides a scripting language that allows you to automate most of the things in Windows. From remapping keys, to moving the mouse, you can automate everything.
 - I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
 
-**✅ [Todoist](https://todoist.com/) - Todo lists**
-
-- I use Todoist because it has a nice Android app that comes with a shortcut to add to inbox.
-- I'm slowly getting used to GTD, so Todoist is a nice addition for my workflow.
-
-**⚠ [NirvanaHQ](https://help.nirvanahq.com/desktop/) - GTD/Todo lists**
-
-* I'm migrating to Nirvana from Todoist, due to the GTD-specific features that Todoist doesn't provide me.
-* If you want to understand what I mean, check [their tutorial videos](https://www.youtube.com/watch?v=2iw-6iFqq9s&feature=emb_title).
-
-**✅ [Wox](https://wox.one) - Application Launcher**
-
-* When I tried Mac for some years, I fell in love with the [Alfred app]( https://www.alfredapp.com/ ). Wox brings a similar experience to Windows, plus it's open source.
-
-![wox screenshot](screenshots/wox.png)
-
 **✅ [Notion](https://www.notion.so/) - All organizer**
 
 - Notion is a software masterpiece, it makes organization seem very simple
@@ -104,16 +88,6 @@ The apps listed in this repo follow the following convention:
 * I use Simple Mind to brainstorm around how can I break down a problem into smaller ones
 
 ![simple mind screenshot](screenshots/simplemind.png)
-
-**⚠ [FileJuggler]( https://www.filejuggler.com/ ) - Automatic File Organization**
-
-* I use this app to autocommit some of my repos (like this one)
-* Also, I remove downloads that start with `t.` after one day, so my Downloads folder doesn't get cluttered.
-* Fails to be installed with `chocolatey`
-
-![filejuggler screenshot](screenshots/filejuggler.png)
-
-**✅ [CopyQ](https://hluk.github.io/CopyQ/) - Clipboard Manager**
 
 **✅ [Transmission]( https://transmissionbt.com/ ) - Torrent client**
 
@@ -141,21 +115,6 @@ The apps listed in this repo follow the following convention:
   * Install them _inside_ WSL with your regular installation method (it probably includes using `fc-cache`)
   * Download them for Windows, and add them to the `C:\Program Files\VcXsrv\fonts` directory
 
-## Writing
-
-**⚠ [Journey](https://2appstudio.com/journey/#win) - Journaling**
-
-* I keep a gratitude journal to be more mindful of the great things that I already have
-* During the day, I take notes here about interesting stuff that happens to me
-* I also keep a mood tracker within here.
-
-**✅ [Typora](https://typora.io) - Minimalist WYSIWYG-ish Markdown editor**
-
-* I use it to edit purely-Markdown repos/files, like this one.
-* Love the focus mode, and the auto-rendering of the markdown, including images
-
-![typora screenshot](screenshots/typora.png)
-
 ## Social
 
 **✅ [Slack](https://slack.com) - Work chat**
@@ -178,20 +137,6 @@ The apps listed in this repo follow the following convention:
 **✅ [Spotify](https://spotify.com) - Music player**
 
 * I use Spotify on a daily basis. I love listening to many kinds of music, and specially, discovering new songs.
-
-## Web browsing
-
-**✅ [Firefox](getfirefox.com)**
-
-- Started using Firefox because it is lighter on my systems. Ended up staying because I'm not missing anything from a software derived from Google's work, and because I support software diversity.
-
-### Firefox extensions
-
-**[Vimium](https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/)**
-
-**[1password](https://1password.com/browsers/firefox/)**
-
-**[uBlock Origin](https://addons.mozilla.org/es/firefox/addon/ublock-origin/)**
 
 ## Command Line Apps
 

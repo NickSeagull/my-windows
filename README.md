@@ -43,13 +43,6 @@ The apps listed in this repo follow the following convention:
 
 ![shutup10 screenshot](screenshots/shutup10.jpg)
 
-**✅ [SimpleWall]( https://www.henrypp.org/product/simplewall) - Better Firewall**
-
-* The Windows Firewall is nice, but it is not that accessible.
-* SimpleWall begins by blocking all apps, and starts prompting you for out/incoming connections, so you can allow them, or leave them blocked.
-
-![simplewall screenshot](screenshots/simplewall.png)
-
 **✅ [WindScribe]( https://windscribe.com/ ) - VPN**
 
 * When connecting through public networks, I **always** use a VPN in order to protect myself.

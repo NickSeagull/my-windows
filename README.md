@@ -86,6 +86,11 @@ The apps listed in this repo follow the following convention:
 
 * I use this client to share files from time to time, very minimal one, which I like.
 
+**⚠ [Pennywise](https://github.com/kamranahmedse/pennywise) - Floating windows**
+
+- Very useful for watching videos while doing other stuff
+- It's like having the ability to listen to a podcast while being able to peek into what the speaker is saying
+
 ## Coding
 
 **✅ [Visual Studio Code](https://code.visualstudio.com/) - My main code editor**

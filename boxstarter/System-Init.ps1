@@ -51,6 +51,7 @@ cinst greenshot
 cinst vlc
 cinst firacodenf
 cinst voicemeeter
+cinst gimp
 
 # Command line tools
 cinst awscli

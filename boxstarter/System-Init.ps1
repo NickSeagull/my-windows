@@ -52,6 +52,7 @@ cinst vlc
 cinst firacodenf
 cinst voicemeeter
 cinst gimp
+cinst altair-graphql
 
 # Command line tools
 cinst awscli

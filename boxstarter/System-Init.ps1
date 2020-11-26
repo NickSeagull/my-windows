@@ -35,7 +35,7 @@ cinst vscode
 cinst microsoft-windows-terminal
 cinst LinkShellExtension
 cinst slack
-cinst spotify
+#cinst spotify
 cinst discord
 cinst windowsfirewallcontrol
 cinst transmission

@@ -34,22 +34,14 @@ The apps listed in this repo follow the following convention:
 - 👜 The app needs to be installed manually from the Windows store
 - ⚠ The app needs to be installed manually from its website
 
-## Security
-
-**⚠ [ShutUp10](https://www.oo-software.com/en/shutup10) - Privacy Issues fixer**
-
-- Yes, Windows 10 still is far behind other OSes regarding privacy. Luckily ShutUp10 exists.
-- ShutUp10 helps disabling all the harmful Windows privacy settings with just one click
-
-![shutup10 screenshot](screenshots/shutup10.jpg)
-
-**✅ [WindScribe]( https://windscribe.com/ ) - VPN**
-
-* When connecting through public networks, I **always** use a VPN in order to protect myself.
-* It also comes with some perks, like bypassing ports that are being blocked by the network.
-* WindScribe has a nice app that I like to select different servers.
-
 ## Productivity
+
+**⚠ [spacedesk](https://spacedesk.net/) - Use my Surface Pro 6 as second screen**
+
+![not the prettiest screen](https://i.imgur.com/WPUt8YX.jpg)
+
+- I use a Surface Pro 6 as my secondary system that acts as a laptop/tablet
+- In some moments, I require a second screen, so spacedesk allows me to use it as a screen when I'm working at my desktop
 
 **✅ [AutoHotKey](https://www.autohotkey.com/) - General automation**
 

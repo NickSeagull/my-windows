@@ -6,6 +6,12 @@
 
 ![desktop](https://i.imgur.com/3Qf25H8.png)
 
+# Disclaimer
+
+It's been a while since I've used a Windows machine for my daily tasks (2018). Nowadays I use a Macbook, mostly due to work reasons.
+
+Still, if I were to use Windows, all of here probably would apply. 😄
+
 # Table of Contents
 
 - [Security](#security)

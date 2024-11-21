@@ -12,6 +12,11 @@ It's been a while since I've used a Windows machine for my daily tasks (2018). N
 
 Still, if I were to use Windows, all of here probably would apply. 😄
 
+
+
+    Set-ExecutionPolicy RemoteSigned
+    Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+
 # Table of Contents
 
 - [Security](#security)

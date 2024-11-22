@@ -1,4 +1,4 @@
-# My super awesome Windows 10 🐱‍🐉
+# My super awesome Windows 11 😎
 
 > The system setup that makes my computing experience awesome
 
@@ -12,10 +12,23 @@ It's been a while since I've used a Windows machine for my daily tasks (2018). N
 
 Still, if I were to use Windows, all of here probably would apply. 😄
 
-
+# ------------- NOTES ------------- 
 
     Set-ExecutionPolicy RemoteSigned
     Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+
+- Min Browser - https://minbrowser.org/
+- Minibin - https://www.majorgeeks.com/files/details/minibin.html
+- DaVinci Resolve 19 - https://www.blackmagicdesign.com/es/products/davinciresolve/
+- Ableton Live 12 Lite - https://www.ableton.com/en/products/live-lite/
+
+
+## OBS Plugins
+
+- https://github.com/FiniteSingularity/obs-retro-effects
+- https://github.com/dev47apps/droidcam-obs-plugin
+
+---
 
 # Table of Contents
 

@@ -52,6 +52,20 @@ packages:
       - "Discord.Discord"
       - "OBSProject.OBSStudio"
       - "Microsoft.VisualStudioCode"
+      - "Giorgiotani.Peazip"
+      - "dev47apps.DroidCam"
+      - "Valve.Steam"
+      - "Bitwarden.Bitwarden"
+      - "Bitwarden.CLI"
+      - "Telegram.TelegramDesktop"
+      - "9NKSQGP7F2NH" # WhatsApp Desktop
+      - "code52.Carnac"
+      - "Mozilla.Firefox"
+      - "Alacritty.Alacritty"
+      - "Datronicsoft.SpacedeskDriver.Server"
+      - "XPFFZHVGQWWLHB" # OneNote
+      - "Rustlang.Rustup"
+      - "Espanso.Espanso"
 
     modules:
       - "PSReadLine"

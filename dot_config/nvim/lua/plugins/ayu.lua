@@ -7,14 +7,23 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  -- add gruvbox
   {
     "Shatur/neovim-ayu",
     config = function()
       require("ayu").setup({
         mirage = false,
         terminal = true,
-        overrides = {},
+        overrides = {
+          Normal = { bg = "None" },
+          ColorColumn = { bg = "None" },
+          SignColumn = { bg = "None" },
+          Folded = { bg = "None" },
+          FoldColumn = { bg = "None" },
+          CursorLine = { bg = "None" },
+          CursorColumn = { bg = "None" },
+          WhichKeyFloat = { bg = "None" },
+          VertSplit = { bg = "None" },
+        },
       })
     end,
   },

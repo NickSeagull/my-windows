@@ -1,0 +1,25 @@
+{{- if eq .chezmoi.os "windows" }}
+general.import = [
+    "~/.config/alacritty/themes/themes/ayu_dark.toml"
+]
+
+{{- if eq .chezmoi.os "windows" }}
+general.working_directory = {{ .chezmoi.homeDir | quote }}
+[terminal.shell]
+program = "powershell.exe"
+args = ["-NoLogo"]
+{{- end }}
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+{{- if eq .chezmoi.os "windows" }}
+size = 16.0
+{{- else }}
+size = 16.0
+{{- end }}
+
+[window]
+padding = { x = 20, y = 15 }
+opacity = 0.9
+blur = true
+{{- end }}

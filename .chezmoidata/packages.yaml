@@ -67,6 +67,12 @@ packages:
       - "Rustlang.Rustup"
       - "Espanso.Espanso"
       - "Appest.TickTick"
+      - "MichaelTippach.ASIO4ALL"
+      - "Canonical.Ubuntu"
+      - "Microsoft.WSL"
+      - "th-ch.YouTubeMusic"
+      - "Transmission.Transmission"
+      - "AutoHotkey.AutoHotkey"
 
     modules:
       - "PSReadLine"

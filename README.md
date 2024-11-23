@@ -1,204 +1,145 @@
 # My super awesome Windows 11 😎
 
-> The system setup that makes my computing experience awesome
+> Enter my digital temple, where I weave my aetherial creations.
 
 [![say thanks badge]( https://img.shields.io/badge/say-thanks-ff69b4)](https://ko-fi.com/nickseagull)
 
-![desktop](https://i.imgur.com/3Qf25H8.png)
-
-# Disclaimer
-
-It's been a while since I've used a Windows machine for my daily tasks (2018). Nowadays I use a Macbook, mostly due to work reasons.
-
-Still, if I were to use Windows, all of here probably would apply. 😄
-
-# ------------- NOTES ------------- 
-
-    Set-ExecutionPolicy RemoteSigned
-    Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
-
-- Min Browser - https://minbrowser.org/
-- Minibin - https://www.majorgeeks.com/files/details/minibin.html
-- DaVinci Resolve 19 - https://www.blackmagicdesign.com/es/products/davinciresolve/
-- Ableton Live 12 Lite - https://www.ableton.com/en/products/live-lite/
-
-
-## OBS Plugins
-
-- https://github.com/FiniteSingularity/obs-retro-effects
-- https://github.com/dev47apps/droidcam-obs-plugin
-
----
-
-# Table of Contents
-
-- [Security](#security)
-- [Productivity](#productivity)
-- [Coding](#coding)
-- [Writing](#writing)
-- [Social](#social)
-- [Music](#music)
-- [Web browsing](#web-browsing)
-  - [Firefox extensions](#firefox-extensions)
-- [Command Line Apps](#command-line-apps)
-  - [Windows CLI apps](#windows-cli-apps)
-  - [WSL CLI apps](#wsl-cli-apps)
-- [Set DNS to DNS.Watch](#set-dns-to-dnswatch)
+![desktop](screenshots/desktop.png)
 
 # Applications
 
-I use [BoxStarter](https://boxstarter.org/) in order to automate the installation of most of my applications. The process usually goes like this:
+I use [ChezMoi](https://chezmoi.io/) in order to automate the installation of most of my applications. The process usually goes like this:
 
-- Install BoxStarter with `. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force`
-- Run the BoxStarter script of this repo with `Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/NickSeagull/my-windows/master/boxstarter/System-Init.ps1 -DisableReboots`
+- Install ChezMoi with `winget install twpayne.chezmoi`
+- Run `Set-ExecutionPolicy RemoteSigned` in order to allow execution of local scripts
+- Run `Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1` to fix issue with Windows long paths.
+- Initialize ChezMoi using this repo.
 
 The apps listed in this repo follow the following convention:
 
-- ✅ The app is successfully automated with BoxStarter
-- 👜 The app needs to be installed manually from the Windows store
+- ✅ The app is successfully automated with my ChezMoi script
 - ⚠ The app needs to be installed manually from its website
 
+You can get a more updated list of apps that I use in the [packages file](.chezmoidata/packages.yaml).
+
 ## Productivity
-
-**⚠ [spacedesk](https://spacedesk.net/) - Use my Surface Pro 6 as second screen**
-
-![not the prettiest screen](https://i.imgur.com/WPUt8YX.jpg)
-
-- I use a Surface Pro 6 as my secondary system that acts as a laptop/tablet
-- In some moments, I require a second screen, so spacedesk allows me to use it as a screen when I'm working at my desktop
 
 **✅ [AutoHotKey](https://www.autohotkey.com/) - General automation**
 
 - AHK provides a scripting language that allows you to automate most of the things in Windows. From remapping keys, to moving the mouse, you can automate everything.
-- I have used AHK extensively in the past and I even created bots for online games with it (yes, I was THAT guy, but not always). You can imagine the power of this tool now.
+- Horrible as a programming language, extremely great as a tool.
 
-**✅ [Notion](https://www.notion.so/) - All organizer**
+**✅ [OneNote](https://www.onenote.com/) - Second Brain**
 
-- Notion is a software masterpiece, it makes organization seem very simple
-- Replaces a lot of tools like Evernote, Google Sheets, etc..
-- I use it mainly to organize my personal stuff
+- I use it as my second brain where I just dump all my thoughts, ideas, half baked projects, etc...
+- The main reason for using it is that it works very well with my eInk tablet, Boox Tab Ultra C, for handwriting notes, and it supports OCR of my handwriting.
+- I use the PARA method for organizing my notes.
 
-![notion screenshot](screenshots/notion.png)
+![OneNote screenshot](./screenshots/onenote.png)
 
-**⚠ [1password](https://1password.com/) - Password management**
+**✅ [BitWarden](https://bitwarden.com/) - Password management**
 
 - Having the same password for all the sites is a very bad practice. I learnt this once a friend's Steam account got hacked, and with it, his email, Facebook, and everything.
 - Thanks to passwords managers like this one, I don't even need to remember my passwords.
-- For some reason, `chocolatey` doesn't install this properly, and it always fails.
 
-**⚠ [Espanso](https://espanso.org/) - Text expansions**
+**✅ [Espanso](https://espanso.org/) - Text expansions**
 
 * I try to avoid typing the typical stuff, like my name, address, etc... Espanso helps me with this task
 * Also, I don't like using acronyms, so I can automatically expand them.
-* You can find the expansions [here](espanso/default.yml)
-
-**⚠ [Simple Mind]( https://simplemind.eu/ ) - Mind mapping**
-
-* I use Simple Mind to brainstorm around how can I break down a problem into smaller ones
-
-![simple mind screenshot](screenshots/simplemind.png)
-
-**✅ [Transmission]( https://transmissionbt.com/ ) - Torrent client**
-
-* I use this client to share files from time to time, very minimal one, which I like.
-
-**⚠ [Pennywise](https://github.com/kamranahmedse/pennywise) - Floating windows**
-
-- Very useful for watching videos while doing other stuff
-- It's like having the ability to listen to a podcast while being able to peek into what the speaker is saying
-
-## Coding
-
-**✅ [Visual Studio Code](https://code.visualstudio.com/) - My main code editor**
-
-**✅ [Microsoft Terminal](https://www.microsoft.com/store/productId/9N0DX20HK701) - Terminal emulator**
-
-**👜 [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) - Run Linux apps natively on Windows**
-
-* Not really an app, but it needs to be installed, so it goes on this list. The chocolatey package didn't work for me, so I have to install it manually.
-* WSL allows running Linux apps on Windows, interoperating with your current files, etc... So it is a much better experience than a Virtual Box, or alike.
-
-**✅ [Docker Desktop]( https://www.docker.com/products/docker-desktop ) - Containerization of apps**
-
-**✅ [VcXsrv](https://github.com/ArcticaProject/vcxsrv) - X11 server for Windows**
-
-* VcXsrv is great, it allows you to run **graphical** Linux apps on Windows thanks to the X11 protocol, make sure to:
-  * `export DISPLAY=:0` in the shell `rc` file (this is already done in my Nix config)
-  * Save the VcXsrv settings to a safe folder, and add a link into the `shell:startup` directory.
-* If some fonts are not being rendered, it is because in VcXsrv you have to:
-  * Install them _inside_ WSL with your regular installation method (it probably includes using `fc-cache`)
-  * Download them for Windows, and add them to the `C:\Program Files\VcXsrv\fonts` directory
-
-## Social
-
-**✅ [Slack](https://slack.com) - Work chat**
-
-- I use Slack mainly for work, although I also chat from time to time in the Functional Programming one
-
-**✅ Discord - Leisure chat**
-
-* I like playing online games, and from time to time, I socialize in them, meaning that I have to talk to people, so I use Discord
-* On the other hand, it also allows me to talk with people from some developer communities, like AutoHotKey.
-
-![discord screenshot](screenshots/discord.png)
-
-**👜 [Unigram](https://github.com/UnigramDev/Unigram) - A Telegram client optimized for Windows 10**
-
-- The regular Telegram client has some issues with DPI scaling, meaning that if I move the window from my 1080p monitor to the Surface one, it'll stay with the same resolution. This doesn't happen with Unigram, and I get integrated notifications.
-
-## Music
-
-**✅ [Spotify](https://spotify.com) - Music player**
-
-* I use Spotify on a daily basis. I love listening to many kinds of music, and specially, discovering new songs.
-
-## Command Line Apps
-
-I use most of my command line apps from WSL, apart from a few ones described here:
-
-### Windows CLI apps
-
-**✅ [`chocolatey`]( https://chocolatey.org/ ) - An `apt`/`brew` for Windows**
-
-**✅ [`bat`](https://github.com/sharkdp/bat) - A cat(1) clone with wings**
-
-**✅ [`watchexec`](https://github.com/watchexec/watchexec) - Executes commands in response to file modifications**
-
-**✅ [RunInBash]( https://github.com/neosmart/RunInBash ) - Aliases `$` to run any command in WSL**
-
-### WSL CLI apps
-
-**⚠ `fontconfig` - Font Cache updater**
-
-* For some reason `fontconfig` is not installed by default in WSL Ubuntu 18.04, so I have to install it with `apt`
-
-**⚠ `nix` - A purely functional package manager**
-
-* I install Nix by adding the following to `/etc/nix/nix.conf`
-
-  ```text
-  sandbox = false
-  use-sqlite-wal = false
-  ```
-
-  And by then running `curl https://nixos.org/nix/install sh`
-
-**⚠ [`home-manager`](https://github.com/rycee/home-manager) - User environment management**
-
-* Note: Install using 19.09 as the channel, instead of master.
-* I install most of my WSL CLI apps using Nix, and I manage them declaratively using `home-manager`
-* I can easily add packages to my `home.nix` file, and then run `home-manager switch` in order to get the newest environment.
+* You can find the expansions [here](AppData/Roaming/espanso/config/default.yml)
 
 **✅ [Link Shell Extension](http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#contact) - Context menu entry to create symlinks**
 
 - Sometimes it is useful to create a symbolic link from a folder/file to another place. This is specially useful when dealing with configuration files that are checked in a version control system like Git.
 
-# Acknowledgements
 
-Thanks to [Nikita Voloboev]( https://nikitavoloboev.xyz/ ) for his awesome [`my-mac-os` list]( https://github.com/nikitavoloboev/my-mac-os ), without it, this one wouldn't exist 🙏
+**⚠️ [Minibin](https://www.majorgeeks.com/files/details/minibin.html)**
 
-# Preferences
+- I like keeping my desktop clean, with no visible icons. So having the recycle bin available in the system tray is very useful.
 
-## Set DNS to DNS.Watch
+## Coding
 
-- Docker has issues with the default DNS provided with Windows 10, to set it to DNS.Watch's servers, [follow this guide](https://dns.watch/how-to-windows-7).
+- **✅ [NeoVim](https://neovim.io/)** - My main code editor
+
+* I use [LazyVim](https://www.lazyvim.org/) as the configuration framework, it is a great foundation for building my config on top of it, without spending days on figuring out the missing stuff.
+
+**✅ [Visual Studio Code](https://code.visualstudio.com/) - Secondary code editor**
+
+* It is one of the most used text editors, so I always keep it nearby, especially when ensuring correct developer experience in [NeoHaskell](https://neohaskell.org)
+
+**✅ [Alacritty](https://alacritty.org/) - Terminal emulator**
+
+**✅ [Windows Subsystem for Linux 2](https://learn.microsoft.com/en-us/windows/wsl/install) - Run Linux apps natively on Windows**
+
+* WSL allows running Linux apps on Windows, interoperating with your current files, etc... So it is a much better experience than a Virtual Box, or alike.
+* Might give some problems in terms of installing the kernel update package, just follow the steps shown in the terminal.
+* If you had bad experiences with WSL in the past, but you haven't tried the version 2, I highly recommend that you try it now. They fixed most of the issues.
+
+
+## Social
+
+**✅ Discord - Chat**
+
+* Most of the communities I'm in use Discord. Either the [NeoHaskell](https://neohaskell.org) one, my server with friends, etc...
+
+![discord screenshot](screenshots/discord.png)
+
+**✅ [Telegram](https://telegram.org)**
+
+**✅ [WhatsApp](https://whatsapp.com)**
+
+## Music
+
+**✅ [YouTube Music Desktop App](https://th-ch.github.io/youtube-music/) - Music player**
+
+* An open-source app with loads of integrations like OBS. I use YouTube Music and not Spotify. This is a surprise for most people, but mainly it is because I prefer to pay for a single service, and with that I don't get ads on YouTube on my mobile phone.
+
+## Multimedia
+
+**✅ OBS - Recording and Streaming**
+
+* Great app for screen sharing and recording, really customizable.
+* I use the following plugins:
+  * [Retro Effects](https://github.com/FiniteSingularity/obs-retro-effects)
+  * [DroidCam](https://github.com/dev47apps/droidcam-obs-plugin) - This one lets me use an old phone as a camera
+  * [Tuna](https://github.com/univrsal/tuna/) - To display the song that is pl.
+
+**⚠️ [DaVinci Resolve 19](https://www.blackmagicdesign.com/es/products/davinciresolve/)**
+
+* My main video editor. It is free, and one of the greatest video editing software. Used by studios like Marvel.
+* Can look overwhelming at first, but by checking some tutorials, you get the tasks done very easily.
+
+**⚠️ [Ableton Live 12 Lite](https://www.ableton.com/en/products/live-lite/)**
+
+* Main digital audio workstation. It came with my [Launchpad X](https://novationmusic.com/products/launchpad-x), and it gives me more than enough features to make my music.
+
+
+## Internet
+
+**[Microsoft Edge](https://www.microsoft.com/edge)**
+
+* It just works, comes with Windows, I can sync my bookmarks across all my devices, and the AI-based tab grouping feature is great
+
+**⚠️ [Min Browser](https://minbrowser.org/)**
+
+* A minimalistic browser that I use for recording my videos. The distraction-free interface helps to focus my content on what I'm looking at.
+
+
+**✅ [Transmission]( https://transmissionbt.com/ ) - Torrent client**
+
+* I use this client to share files from time to time, very minimal one, which I like.
+
+## Command Line Apps
+
+I use most of my command line apps from WSL, apart from a few ones described here:
+
+### WSL CLI apps
+
+**⚠ `nix` - A purely functional package manager**
+
+* I install Nix by using the [Determinate Systems Nix Installer](https://github.com/DeterminateSystems/nix-installer). Basically running the following command in WSL2.
+
+```sh
+    curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+```
+

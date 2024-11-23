@@ -59,7 +59,7 @@ You can get a more updated list of apps that I use in the [packages file](.chezm
 
 ## Coding
 
-- **✅ [NeoVim](https://neovim.io/)** - My main code editor
+**✅ [NeoVim](https://neovim.io/)** - My main code editor
 
 * I use [LazyVim](https://www.lazyvim.org/) as the configuration framework, it is a great foundation for building my config on top of it, without spending days on figuring out the missing stuff.
 
@@ -81,8 +81,6 @@ You can get a more updated list of apps that I use in the [packages file](.chezm
 **✅ Discord - Chat**
 
 * Most of the communities I'm in use Discord. Either the [NeoHaskell](https://neohaskell.org) one, my server with friends, etc...
-
-![discord screenshot](screenshots/discord.png)
 
 **✅ [Telegram](https://telegram.org)**
 
@@ -116,7 +114,7 @@ You can get a more updated list of apps that I use in the [packages file](.chezm
 
 ## Internet
 
-**[Microsoft Edge](https://www.microsoft.com/edge)**
+**✅ [Microsoft Edge](https://www.microsoft.com/edge)**
 
 * It just works, comes with Windows, I can sync my bookmarks across all my devices, and the AI-based tab grouping feature is great
 

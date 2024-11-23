@@ -1,0 +1,5 @@
+{{ if ne .chezmoi.os "windows" }}
+Documents/WindowsPowerShell
+{{ end }}
+README.md
+screenshots/*

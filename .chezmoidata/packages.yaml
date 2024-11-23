@@ -73,6 +73,7 @@ packages:
       - "th-ch.YouTubeMusic"
       - "Transmission.Transmission"
       - "AutoHotkey.AutoHotkey"
+      - "Nextcloud.NextcloudDesktop"
 
     modules:
       - "PSReadLine"

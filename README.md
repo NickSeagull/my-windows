@@ -74,6 +74,12 @@ You can get a more updated list of apps that I use in the [packages file](.chezm
 * WSL allows running Linux apps on Windows, interoperating with your current files, etc... So it is a much better experience than a Virtual Box, or alike.
 * Might give some problems in terms of installing the kernel update package, just follow the steps shown in the terminal.
 * If you had bad experiences with WSL in the past, but you haven't tried the version 2, I highly recommend that you try it now. They fixed most of the issues.
+* Remember to add the following to your `/etc/wsl.conf` and then restart WSL with `wsl --shutdown`:
+
+  ```conf
+  [boot]
+  systemd=true
+  ```
 
 
 ## Social

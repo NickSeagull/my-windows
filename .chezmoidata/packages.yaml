@@ -15,6 +15,7 @@ packages:
       - "pkg-config"
       - "ripgrep"
       - "sl" # CHOOCHOO MOTHERFUCKER
+      - "unzip"
 
     snaps:
       - name: "zellij"

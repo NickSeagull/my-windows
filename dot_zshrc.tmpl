@@ -8,6 +8,15 @@ eval "$(starship init zsh)"
 
 alias cmcd="chezmoi cd"
 
+# Better ls aliases
+alias l="exa --icons"
+alias ls="exa --icons"
+alias ll="exa --icons --long"
+alias la="exa --icons --long --all"
+alias lt="exa --icons --recurse --tree --level=3"
+
+# Better bat aliases
+alias cat="batcat"
 
 # fnm - fast node manager
 FNM_PATH="$HOME/.local/share/fnm"

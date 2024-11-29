@@ -16,6 +16,8 @@ packages:
       - "ripgrep"
       - "sl" # CHOOCHOO MOTHERFUCKER
       - "unzip"
+      - "exa" # better ls
+      - "bat" # better cat
 
     snaps:
       - name: "zellij"

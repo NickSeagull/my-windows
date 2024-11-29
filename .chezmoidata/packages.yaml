@@ -80,6 +80,7 @@ packages:
       - "Transmission.Transmission"
       - "AutoHotkey.AutoHotkey"
       - "Nextcloud.NextcloudDesktop"
+      - "GIMP.GIMP"
 
     modules:
       - "PSReadLine"

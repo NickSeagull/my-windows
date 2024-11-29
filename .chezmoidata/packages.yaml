@@ -29,6 +29,9 @@ packages:
       - name: "direnv"
         command: "direnv"
 
+      - name: "lazygit-gm"
+        command: "lazygit"
+
     curls:
       - url: "https://starship.rs/install.sh"
         command: "starship"

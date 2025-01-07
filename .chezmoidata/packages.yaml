@@ -81,6 +81,7 @@ packages:
       - "AutoHotkey.AutoHotkey"
       - "Nextcloud.NextcloudDesktop"
       - "GIMP.GIMP"
+      - "VB-Audio.Voicemeeter.Banana"
 
     modules:
       - "PSReadLine"

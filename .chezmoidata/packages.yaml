@@ -32,6 +32,12 @@ packages:
       - name: "lazygit-gm"
         command: "lazygit"
 
+      - name: "go"
+        command: "go"
+
+      - name: "exercism"
+        command: "exercism"
+
     curls:
       - url: "https://starship.rs/install.sh"
         command: "starship"

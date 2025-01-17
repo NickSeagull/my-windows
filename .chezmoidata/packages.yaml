@@ -58,6 +58,7 @@ packages:
       - "Obsidian.Obsidian"
       - "zig.zig"
       - "BurntSushi.ripgrep.MSVC"
+      - "Docker.DockerDesktop"
       - "LGUG2Z.komorebi"
       - "LGUG2Z.whkd"
       - "Audacity.Audacity"

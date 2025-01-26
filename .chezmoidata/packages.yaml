@@ -89,6 +89,9 @@ packages:
       - "Nextcloud.NextcloudDesktop"
       - "GIMP.GIMP"
       - "VB-Audio.Voicemeeter.Banana"
+      - "Notion.Notion"
+      - "Notion.NotionCalendar"
+      - "Anysphere.Cursor"
 
     modules:
       - "PSReadLine"

@@ -92,6 +92,8 @@ packages:
       - "Notion.Notion"
       - "Notion.NotionCalendar"
       - "Anysphere.Cursor"
+      - "AivarAnnamaa.Thonny"
+      - "FontForge.FontForge"
 
     modules:
       - "PSReadLine"

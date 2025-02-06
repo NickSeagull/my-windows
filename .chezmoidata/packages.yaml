@@ -38,6 +38,9 @@ packages:
       - name: "exercism"
         command: "exercism"
 
+      - name: "goland"
+        command: "goland"
+
     curls:
       - url: "https://starship.rs/install.sh"
         command: "starship"

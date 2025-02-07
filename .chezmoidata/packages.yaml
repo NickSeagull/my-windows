@@ -9,14 +9,11 @@ packages:
       - "libffi8"
       - "libgmp-dev"
       - "libgmp10"
-      - "libncurses-dev"
-      - "libncurses5"
-      - "libtinfo5"
       - "pkg-config"
       - "ripgrep"
       - "sl" # CHOOCHOO MOTHERFUCKER
       - "unzip"
-      - "exa" # better ls
+      - "eza" # better ls
       - "bat" # better cat
 
     snaps:
@@ -40,6 +37,15 @@ packages:
 
       - name: "goland"
         command: "goland"
+
+      - name: "slack"
+        command: "slack"
+
+      - name: "zig"
+        command: "zig"
+
+      - name: "ghostty"
+        command: "ghostty"
 
     curls:
       - url: "https://starship.rs/install.sh"
